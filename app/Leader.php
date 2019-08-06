@@ -33,14 +33,16 @@ use Illuminate\Database\Eloquent\Model;
 class Leader extends Model
 {
     protected $fillable = [
-        'cedula','name','lastname', 'phone', 'sector_id'
+        'cedula', 'name', 'lastname', 'phone', 'sector_id'
     ];
 
-    public function sector(){
+    public function sector()
+    {
         return $this->belongsTo(Sector::class);
     }
 
-    public function voters(){
+    public function voters()
+    {
         return $this->hasMany(Voter::class);
     }
 }
