@@ -65,4 +65,9 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function getPerfilAttribute($key)
+    {
+        return $this->type === "admin" ? "Administrador":"Auxiliar";
+    }
 }

@@ -23,6 +23,13 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        switch (currentPerfil()){
+            case 'auxiliar':
+                    return view('home');
+            case 'admin':
+                    return view('home');
+                break;
+            default:break;
+        }
     }
 }
