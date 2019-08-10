@@ -5,6 +5,7 @@
     <title>Metronic | Empty Page</title>
     <meta name="description" content="Page with empty content">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <!--begin::Fonts -->
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
     <script>
@@ -24,6 +25,7 @@
     <!--begin:: Global Mandatory Vendors -->
     <link href="{{asset("vendors/general/perfect-scrollbar/css/perfect-scrollbar.css")}}" rel="stylesheet" type="text/css"/>
     <!--end:: Global Mandatory Vendors -->
+    @yield('style')
     <link href="{{asset("vendors/general/@fortawesome/fontawesome-free/css/all.min.css")}}" rel="stylesheet" type="text/css"/>
     <link href="{{asset("vendors/general/socicon/css/socicon.css")}}" rel="stylesheet" type="text/css"/>
     <link href="{{asset("vendors/custom/vendors/line-awesome/css/line-awesome.css")}}" rel="stylesheet" type="text/css"/>
@@ -202,6 +204,7 @@
             </div>
             <!-- end:: Header -->
             <div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor">
+                    @yield('subheader')
                 <!-- begin:: Content -->
                 <div class="kt-content  kt-grid__item kt-grid__item--fluid" id="kt_content">
                     @yield('content')
@@ -247,12 +250,10 @@
 <script src="{{asset("js/demo1/scripts.bundle.js")}}" type="text/javascript"></script>
 <!--end::Global Theme Bundle -->
 <!--begin::Page Vendors(used by this page) -->
-<script src="{{asset("vendors/custom/fullcalendar/fullcalendar.bundle.js")}}" type="text/javascript"></script>
-<script src="//maps.google.com/maps/api/js?key=AIzaSyBTGnKT7dt597vo9QgeQ7BFhvSRP4eiMSM" type="text/javascript"></script>
-<script src="{{asset("vendors/custom/gmaps/gmaps.js")}}" type="text/javascript"></script>
+@yield('scriptMedio')
 <!--end::Page Vendors -->
-<!--begin::Page Scripts(used by this page) -->
-<script src="{{asset("js/demo1/pages/dashboard.js")}}" type="text/javascript"></script>
-<!--end::Page Scripts -->
+
+
+@yield('scriptEnd')
 </body>
 </html>

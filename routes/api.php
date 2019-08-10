@@ -13,13 +13,16 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+//Route::middleware('auth:api')->get('/user', function (Request $request) {
+//    return $request->user();
+//});
+
+Route::prefix('v1')->name('api.')->group(function () {
+    Route::apiResources([
+        'leaders' => 'API\LeaderController',
+        'voters' => 'API\VoterController',
+        'users' => 'API\UserController',
+        'points' => 'API\PointController',
+        'sectors' => 'API\SectorController',
+    ]);
 });
-Route::apiResources([
-    'leaders' => 'API\LeaderController',
-    'voters' => 'API\VoterController',
-    'users' => 'API\UserController',
-    'points' => 'API\PointController',
-    'sectors' => 'API\SectorController',
-]);

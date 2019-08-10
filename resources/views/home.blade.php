@@ -21,3 +21,11 @@
     </div>
 </div>
 @endsection
+@section('scriptMedio')
+    <script src="{{asset("vendors/custom/fullcalendar/fullcalendar.bundle.js")}}" type="text/javascript"></script>
+    <script src="//maps.google.com/maps/api/js?key=AIzaSyBTGnKT7dt597vo9QgeQ7BFhvSRP4eiMSM" type="text/javascript"></script>
+    <script src="{{asset("vendors/custom/gmaps/gmaps.js")}}" type="text/javascript"></script>
+    <!--begin::Page Scripts(used by this page) -->
+    <script src="{{asset("js/demo1/pages/dashboard.js")}}" type="text/javascript"></script>
+    <!--end::Page Scripts -->
+@endsection

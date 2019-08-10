@@ -3,19 +3,16 @@
 namespace App\Http\Controllers\API;
 
 use App\User;
+use App\Http\Resources\Users as UsersResource;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
 class UserController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function index()
     {
-       //
+        return new UsersResource(User::paginate(10));
     }
 
     /**
