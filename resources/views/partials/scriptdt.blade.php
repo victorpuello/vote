@@ -1,0 +1,14 @@
+<script src="{{asset('vendor/autosize/autosize.js')}}"></script>
+<script src="{{asset('vendor/select2/js/select2.js')}}"></script>
+<script src="{{asset('vendor/datatables/media/js/jquery.dataTables.min.js')}}"></script>
+<script src="{{asset('vendor/datatables/media/js/dataTables.bootstrap4.min.js')}}"></script>
+<script src="{{asset('js/dataTables.buttons.min.js')}}"></script>
+<script src="{{asset('js/buttons.bootstrap4.min.js')}}"></script>
+<script src="{{asset('js/dataTables.responsive.min.js')}}"></script>
+<script src="{{asset('js/dataTables.select.min.js')}}"></script>
+<script src="{{asset('js/jszip.min.js')}}"></script>
+<script src="{{asset('js/pdfmake.min.js')}}"></script>
+<script src="{{asset('js/vfs_fonts.js')}}"></script>
+<script src="{{asset('js/buttons.html5.min.js')}}"></script>
+<script src="{{asset('js/buttons.print.min.js')}}"></script>
+<script src="{{asset('js/custom.js')}}"></script>

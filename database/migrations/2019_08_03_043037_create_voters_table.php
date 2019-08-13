@@ -20,11 +20,11 @@ class CreateVotersTable extends Migration
             $table->string('lastname');
             $table->string('phone');
             $table->unsignedBigInteger('sector_id');
-            $table->foreign('sector_id')->references('id')->on('sectors');
+            $table->foreign('sector_id')->references('id')->on('sectors')->onDelete('cascade');
             $table->unsignedBigInteger('leader_id');
-            $table->foreign('leader_id')->references('id')->on('leaders');
+            $table->foreign('leader_id')->references('id')->on('leaders')->onDelete('cascade');
             $table->unsignedBigInteger('point_id');
-            $table->foreign('point_id')->references('id')->on('points');
+            $table->foreign('point_id')->references('id')->on('points')->onDelete('cascade');
             $table->integer('table_number')->nullable();
             $table->boolean('sufrago')->default(false);
             $table->timestamps();

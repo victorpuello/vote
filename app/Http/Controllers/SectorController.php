@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\CreateSectorRequest;
+use App\Http\Requests\UpdateSectorRequest;
 use App\Sector;
-use Illuminate\Http\Request;
+use Styde\Html\Facades\Alert;
 
 class SectorController extends Controller
 {
@@ -14,7 +16,7 @@ class SectorController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.sectors.index');
     }
 
     /**
@@ -24,7 +26,7 @@ class SectorController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.sectors.ajax.create');
     }
 
     /**
@@ -33,9 +35,11 @@ class SectorController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(CreateSectorRequest $request)
     {
-        //
+        $sector = Sector::create($request->all());
+        Alert::message('Sector: '.$sector->name.', Guardado con exito','success');
+        return redirect()->route('sectors.index');
     }
 
     /**
@@ -57,7 +61,7 @@ class SectorController extends Controller
      */
     public function edit(Sector $sector)
     {
-        //
+        return view('admin.sectors.ajax.edit',compact('sector'));
     }
 
     /**
@@ -67,19 +71,23 @@ class SectorController extends Controller
      * @param  \App\Sector  $sector
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Sector $sector)
+    public function update(UpdateSectorRequest $request, Sector $sector)
     {
-        //
+        $sector->update($request->all());
+        Alert::message('Sector: '.$sector->name.', actualizado con exito','success');
+        return redirect()->route('sectors.index');
     }
 
+
     /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Sector  $sector
-     * @return \Illuminate\Http\Response
+     * @param Sector $sector
+     * @return \Illuminate\Http\RedirectResponse
+     * @throws \Exception
      */
     public function destroy(Sector $sector)
     {
-        //
+        $sector->delete();
+        Alert::message('Sector: '.$sector->name.', se ha eliminado con exito','warning');
+        return redirect()->route('sectors.index');
     }
 }

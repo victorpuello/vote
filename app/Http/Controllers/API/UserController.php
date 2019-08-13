@@ -12,7 +12,7 @@ class UserController extends Controller
 
     public function index()
     {
-        return new UsersResource(User::paginate(10));
+        return datatables()->eloquent(User::query())->toJson();
     }
 
     /**

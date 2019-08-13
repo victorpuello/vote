@@ -34,7 +34,16 @@ class Sector extends Model
         return $this->hasMany(Leader::class);
     }
     public function voters(){
-        $this->hasMany(Voter::class);
+        return $this->hasMany(Voter::class);
+    }
+    public function getCountVotersAttribute(){
+        return count($this->voters);
+    }
+    public function getCountLeadersAttribute(){
+        return count($this->leaders);
+    }
+    public function getNameAttribute(){
+        return $this->name ?? 'N/A';
     }
 
 }

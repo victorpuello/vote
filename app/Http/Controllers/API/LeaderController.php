@@ -17,7 +17,10 @@ class LeaderController extends Controller
      */
     public function index()
     {
-        return new LeadersResource(Leader::paginate(10));
+        return datatables()->eloquent(Leader::with('sector'))
+            ->addColumn('sector',function (Leader $leader){
+                return $leader->sector->name;
+            })->orderColumn('sector', '-sector_id $1')->toJson();
     }
 
     /**

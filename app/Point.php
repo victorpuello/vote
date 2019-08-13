@@ -3,7 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-
+use App\Voter as Votantes;
 /**
  * App\Point
  *
@@ -29,7 +29,13 @@ class Point extends Model
     ];
 
     public function voters(){
-        $this->hasMany(Voter::class);
+        return $this->hasMany(Votantes::class);
     }
 
+    public function getCountVotersAttribute(){
+        return count($this->voters);
+    }
+    public function getNameAttribute(){
+        return $this->name ?? 'N/A';
+    }
 }

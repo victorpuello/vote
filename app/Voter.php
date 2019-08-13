@@ -43,14 +43,19 @@ class Voter extends Model
     ];
 
     public function sector(){
-        $this->belongsTo(Sector::class);
+        return $this->belongsTo(Sector::class);
     }
 
     public function point(){
-        $this->belongsTo(Point::class);
+        return $this->belongsTo(Point::class);
     }
 
     public function leader(){
-        $this->belongsTo(Leader::class);
+        return $this->belongsTo(Leader::class);
     }
+
+    public function getFullNameAttribute(){
+        return $this->name .' '.$this->lastname;
+    }
+
 }

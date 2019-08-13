@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\CreateLeaderRequest;
+use App\Http\Requests\UpdateLeaderRequest;
 use App\Leader;
-use App\Http\Resources\Leader as LeaderResource;
-use Illuminate\Http\Request;
+use App\Sector;
+use App\Voter;
+use Styde\Html\Facades\Alert;
 
 class LeaderController extends Controller
 {
@@ -15,7 +18,7 @@ class LeaderController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.leaders.index');
     }
 
     /**
@@ -25,7 +28,8 @@ class LeaderController extends Controller
      */
     public function create()
     {
-        //
+        $sectors = Sector::pluck('name','id');
+        return view('admin.leaders.ajax.create',compact('sectors'));
     }
 
     /**
@@ -34,19 +38,20 @@ class LeaderController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(CreateLeaderRequest $request)
     {
-        //
+        $leader = Leader::create($request->all());
+        Alert::message('Líder: '.$leader->full_name.', Guardado con exito','success');
+        return redirect()->route('leaders.index');
     }
 
 
     /**
      * @param Leader $leader
-     * @return LeaderResource
      */
     public function show(Leader $leader)
     {
-        return new LeaderResource($leader);
+        //
     }
 
     /**
@@ -57,29 +62,34 @@ class LeaderController extends Controller
      */
     public function edit(Leader $leader)
     {
-        //
+        $sectors = Sector::pluck('name','id');
+        return view('admin.leaders.ajax.edit',compact('sectors','leader'));
     }
 
+
     /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Leader  $leader
-     * @return \Illuminate\Http\Response
+     * @param UpdateLeaderRequest $request
+     * @param Leader $leader
+     * @return \Illuminate\Http\RedirectResponse
      */
-    public function update(Request $request, Leader $leader)
+    public function update(UpdateLeaderRequest $request, Leader $leader)
     {
-        //
+        $leader->update($request->all());
+        Alert::message('Líder: '.$leader->full_name.', actualizado con exito','success');
+        return redirect()->route('leaders.index');
     }
 
+
     /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Leader  $leader
-     * @return \Illuminate\Http\Response
+     * @param Leader $leader
+     * @return \Illuminate\Http\RedirectResponse
+     * @throws \Exception
      */
     public function destroy(Leader $leader)
     {
-        //
+        $count = count($leader->voters);
+        $leader->delete();
+        Alert::message('Líder: '.$leader->full_name.', y sus '.$count.' votantes, se han eliminado con exito','warning');
+        return redirect()->route('leaders.index');
     }
 }

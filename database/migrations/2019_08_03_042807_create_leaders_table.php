@@ -20,7 +20,7 @@ class CreateLeadersTable extends Migration
             $table->string('lastname');
             $table->string('phone');
             $table->unsignedBigInteger('sector_id');
-            $table->foreign('sector_id')->references('id')->on('sectors');
+            $table->foreign('sector_id')->references('id')->on('sectors')->onDelete('cascade');
             $table->timestamps();
         });
     }

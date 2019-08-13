@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\API;
 
+use App\Sector;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -14,7 +15,12 @@ class SectorController extends Controller
      */
     public function index()
     {
-        //
+        return datatables()->eloquent(Sector::query())
+            ->addColumn('votantes',function (Sector $sector){
+                return $sector->count_voters;
+            })->addColumn('lideres',function (Sector $sector){
+                return $sector->count_leaders;
+            })->toJson();
     }
 
     /**

@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\CreateUserRequest;
+use App\Http\Requests\UpdateUserRequest;
 use App\User;
 use Illuminate\Http\Request;
+use Styde\Html\Facades\Alert;
 
 class UserController extends Controller
 {
@@ -25,7 +28,7 @@ class UserController extends Controller
      */
     public function create()
     {
-
+        return view('admin.users.ajax.create');
     }
 
     /**
@@ -34,9 +37,11 @@ class UserController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(CreateUserRequest $request)
     {
-        //
+        $user = User::create($request->all());
+        Alert::message('Usuario: '.$user->username.', Guardado con exito','success');
+        return redirect()->route('users.index');;
     }
 
     /**
@@ -56,31 +61,34 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(User $user)
     {
-        //
+        return view('admin.users.ajax.edit',compact('user'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
 
     /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @param UpdateUserRequest $request
+     * @param User $user
+     * @return \Illuminate\Http\RedirectResponse
      */
-    public function destroy($id)
+    public function update(UpdateUserRequest $request, User $user)
     {
-        //
+        $user->update($request->all());
+        Alert::message('Usuario: '.$user->username.', Actualizado con exito','success');
+        return redirect()->route('users.index');
+    }
+
+
+    /**
+     * @param User $user
+     * @return \Illuminate\Http\RedirectResponse
+     * @throws \Exception
+     */
+    public function destroy(User $user)
+    {
+        $user->delete();
+        Alert::message('El usuario: '.$user->username.', fué eliminado con exito.');
+        return redirect()->route('users.index');
     }
 }

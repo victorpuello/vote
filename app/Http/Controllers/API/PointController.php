@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\API;
 
+use App\Point;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -14,7 +15,10 @@ class PointController extends Controller
      */
     public function index()
     {
-        //
+        return datatables()->eloquent(Point::query())
+            ->addColumn('votantes',function (Point $point){
+                return $point->count_voters;
+            })->toJson();
     }
 
     /**

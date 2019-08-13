@@ -36,13 +36,15 @@ class Leader extends Model
         'cedula', 'name', 'lastname', 'phone', 'sector_id'
     ];
 
-    public function sector()
-    {
+    public function sector(){
         return $this->belongsTo(Sector::class);
     }
 
-    public function voters()
-    {
+    public function voters(){
         return $this->hasMany(Voter::class);
+    }
+
+    public function getFullNameAttribute(){
+        return $this->name .' '.$this->lastname;
     }
 }

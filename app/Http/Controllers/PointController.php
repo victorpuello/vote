@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\CreatePointerRequest;
+use App\Http\Requests\UpdatePointerRequest;
 use App\Point;
 use Illuminate\Http\Request;
+use Styde\Html\Facades\Alert;
 
 class PointController extends Controller
 {
@@ -14,7 +17,7 @@ class PointController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.points.index');
     }
 
     /**
@@ -24,7 +27,7 @@ class PointController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.points.ajax.create');
     }
 
     /**
@@ -33,9 +36,11 @@ class PointController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(CreatePointerRequest $request)
     {
-        //
+        $point = Point::create($request->all());
+        Alert::message('Puesto de votacion: '.$point->name.', Guardado con exito','success');
+        return redirect()->route('points.index');
     }
 
     /**
@@ -57,29 +62,32 @@ class PointController extends Controller
      */
     public function edit(Point $point)
     {
-        //
+        return view('admin.points.ajax.edit',compact('point'));
     }
 
+
     /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Point  $point
-     * @return \Illuminate\Http\Response
+     * @param UpdatePointerRequest $request
+     * @param Point $point
+     * @return \Illuminate\Http\RedirectResponse
      */
-    public function update(Request $request, Point $point)
+    public function update(UpdatePointerRequest $request, Point $point)
     {
-        //
+        $point->update($request->all());
+        Alert::message('Puesto de votación: '.$point->name.', actualizado con exito','success');
+        return redirect()->route('points.index');
     }
 
+
     /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Point  $point
-     * @return \Illuminate\Http\Response
+     * @param Point $point
+     * @return \Illuminate\Http\RedirectResponse
+     * @throws \Exception
      */
     public function destroy(Point $point)
     {
-        //
+        $point->delete();
+        Alert::message('Puesto de votación: '.$point->name.', se ha eliminado con exito','warning');
+        return redirect()->route('points.index');
     }
 }

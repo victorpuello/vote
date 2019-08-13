@@ -2,8 +2,15 @@
 
 namespace App\Http\Controllers;
 
+
+use App\Http\Requests\CreateVoterRequest;
+use App\Http\Requests\UpdateVoterRequest;
+use App\Leader;
+use App\Point;
+use App\Sector;
 use App\Voter;
 use Illuminate\Http\Request;
+use Styde\Html\Facades\Alert;
 
 class VoterController extends Controller
 {
@@ -14,7 +21,7 @@ class VoterController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.voters.index');
     }
 
     /**
@@ -24,7 +31,10 @@ class VoterController extends Controller
      */
     public function create()
     {
-        //
+        $leaders = Leader::pluck('name','id');
+        $points = Point::pluck('name', 'id');
+        $sectors = Sector::pluck('name','id');
+        return view('admin.voters.ajax.create', compact('leaders','points','sectors'));
     }
 
     /**
@@ -33,9 +43,11 @@ class VoterController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(CreateVoterRequest $request)
     {
-        //
+        $voter = Voter::create($request->all());
+        Alert::message('Votante: '.$voter->full_name.', Guardado con exito','success');
+        return redirect()->route('voters.index');
     }
 
     /**
@@ -57,29 +69,34 @@ class VoterController extends Controller
      */
     public function edit(Voter $voter)
     {
-        //
+        $leaders = Leader::pluck('name','id');
+        $points = Point::pluck('name', 'id');
+        $sectors = Sector::pluck('name','id');
+        return view('admin.voters.ajax.edit', compact('leaders','points','sectors','voter'));
     }
 
+
     /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Voter  $voter
-     * @return \Illuminate\Http\Response
+     * @param UpdateVoterRequest $request
+     * @param Voter $voter
+     * @return \Illuminate\Http\RedirectResponse
      */
-    public function update(Request $request, Voter $voter)
+    public function update(UpdateVoterRequest $request, Voter $voter)
     {
-        //
+        $voter->update($request->all());
+        Alert::message('Votante: '.$voter->full_name.', actualizado con exito','success');
+        return redirect()->route('voters.index');
     }
 
     /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Voter  $voter
-     * @return \Illuminate\Http\Response
+     * @param Voter $voter
+     * @return \Illuminate\Http\RedirectResponse
+     * @throws \Exception
      */
     public function destroy(Voter $voter)
     {
-        //
+        $voter->delete();
+        Alert::message('Votante: '.$voter->full_name.', se ha eliminado con exito','warning');
+        return redirect()->route('voters.index');
     }
 }
