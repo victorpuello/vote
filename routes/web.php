@@ -11,6 +11,8 @@
 |
 */
 
+use App\Clases\SendMessageWhatsapp;
+
 Route::get('/', function () {
     return view('auth.login');
 });
@@ -25,3 +27,9 @@ Route::group(['prefix'=>'campain'],function (){
     Route::resource('sectors','SectorController');
 });
 Route::get('/reports','ReporterController@index')->name('reports.index');
+Route::get('/reports/voters','ReporterController@voters')->name('reports.voters');
+Route::get('/msg', function () {
+    $sm = new SendMessageWhatsapp();
+    $sm->sendMessage("Mensaje Para mi reina",3215496008);
+    return "Enviado con exito";
+});

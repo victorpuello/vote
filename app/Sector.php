@@ -42,8 +42,5 @@ class Sector extends Model
     public function getCountLeadersAttribute(){
         return count($this->leaders);
     }
-    public function getNameAttribute(){
-        return $this->name ?? 'N/A';
-    }
 
 }

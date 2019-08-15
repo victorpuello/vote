@@ -15,9 +15,9 @@ class PointController extends Controller
      */
     public function index()
     {
-        return datatables()->eloquent(Point::query())
+        return datatables()->eloquent(Point::with('voters'))
             ->addColumn('votantes',function (Point $point){
-                return $point->count_voters;
+                return count($point->voters);
             })->toJson();
     }
 

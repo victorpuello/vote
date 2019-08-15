@@ -15,11 +15,11 @@ class SectorController extends Controller
      */
     public function index()
     {
-        return datatables()->eloquent(Sector::query())
+        return datatables()->eloquent(Sector::with('voters','leaders'))
             ->addColumn('votantes',function (Sector $sector){
-                return $sector->count_voters;
+                return count($sector->voters);
             })->addColumn('lideres',function (Sector $sector){
-                return $sector->count_leaders;
+                return count($sector->leaders);
             })->toJson();
     }
 

@@ -35,7 +35,4 @@ class Point extends Model
     public function getCountVotersAttribute(){
         return count($this->voters);
     }
-    public function getNameAttribute(){
-        return $this->name ?? 'N/A';
-    }
 }
