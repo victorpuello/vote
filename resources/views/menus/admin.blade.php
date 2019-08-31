@@ -62,17 +62,17 @@
             </li>
         </ul>
     </li>
-    <li class="nav-parent {{ request()->is('/reports') ? 'nav-active' : '' }}">
-        <a class="nav-link" href="#">
-            <i class="fas fa-print" aria-hidden="true"></i>
-            <span>Reportes</span>
-        </a>
-        <ul class="nav nav-children">
-            <li>
-                <a class="nav-link" href="{{route('reports.index')}}">
-                    Reportes
-                </a>
-            </li>
-        </ul>
-    </li>
+{{--    <li class="nav-parent {{ request()->is('/reports') ? 'nav-active' : '' }}">--}}
+{{--        <a class="nav-link" href="#">--}}
+{{--            <i class="fas fa-print" aria-hidden="true"></i>--}}
+{{--            <span>Reportes</span>--}}
+{{--        </a>--}}
+{{--        <ul class="nav nav-children">--}}
+{{--            <li>--}}
+{{--                <a class="nav-link" href="{{route('reports.index')}}">--}}
+{{--                    Reportes--}}
+{{--                </a>--}}
+{{--            </li>--}}
+{{--        </ul>--}}
+{{--    </li>--}}
 </ul>

@@ -13,8 +13,11 @@
                     <a href="{{route('voters.create')}}"  class="btn btn-primary on-default simple-ajax-modal ">Agregar <i class="fas fa-plus"></i></a>
                 </div>
             </div>
+            <div class="col-sm-2 offset-4" id="datatable-botones">
+
+            </div>
         </div>
-        <table class="table table-bordered table-striped mb-0" id="voters">
+        <table class="table table-bordered table-striped mb-0" id="datatable-tabletools">
             <thead>
             <tr>
                 <th></th>
@@ -43,5 +46,6 @@
 @section('scriptfin')
     <script src="{{asset('js/examples/examples.modals.js')}}"></script>
     <script src="{{asset('js/examples/examples.notifications.js')}}"></script>
-    <script src="{{asset('js/tablas/voters.js')}}"></script>
+    <script src="{{asset('js/examples/examples.datatables.tabletools.js')}}"></script>
+{{--    <script src="{{asset('js/tablas/voters.js')}}"></script>--}}
 @endsection
