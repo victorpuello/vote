@@ -20,7 +20,7 @@
         {!! Form::text('phone', null, ['class' => 'form-control', 'placeholder' => 'Telefono/Celular']) !!}
     </div>
     <div class="col-lg-6">
-        {!! Form::label('sector_id', 'Tipo de usuario',['class'=>'col-lg-12 control-label text-lg-left pt-2']) !!}
+        {!! Form::label('sector_id', 'Sector',['class'=>'col-lg-12 control-label text-lg-left pt-2']) !!}
         {!! Form::select('sector_id', $sectors,null,['placeholder' =>'Selecciona un sector','class' => 'form-control mb-3', 'id'=>'sector_id','required']) !!}
     </div>
 </div>
