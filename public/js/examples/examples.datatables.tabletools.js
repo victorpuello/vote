@@ -88,6 +88,22 @@ Theme Version: 	2.2.0
         $('#datatable-botones').find('.btn-secondary').removeClass('btn-secondary').addClass('btn-primary');
     };
 
+    $(document).on('click', '.edit-row', function (e) {
+        e.preventDefault();
+        $('.simple-ajax-modal').magnificPopup({
+            type: 'ajax',
+            modal: true
+        });
+    });
+    $(document).on('click', '.remove-row', function (e) {
+        $("#form-delete").attr('action', $(this).data('urldestroy') );
+        $("#Nombreasg").text( $(this).data('nasg') );
+        $('.modal-basic').magnificPopup({
+            type: 'inline',
+            preloader: false,
+            modal: true
+        });
+    });
     $(function () {
         datatableInit();
     });
