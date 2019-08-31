@@ -13,9 +13,11 @@
                     <a href="{{route('voters.create')}}"  class="btn btn-primary on-default simple-ajax-modal ">Agregar <i class="fas fa-plus"></i></a>
                 </div>
             </div>
+            @admin
             <div class="col-sm-2 offset-4" id="datatable-botones">
 
             </div>
+            @endadmin
         </div>
         <table class="table table-bordered table-striped mb-0" id="datatable-tabletools">
             <thead>

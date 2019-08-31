@@ -5,6 +5,7 @@
             <span>Escritorio</span>
         </a>
     </li>
+    @admin
     <li class="nav-parent {{ request()->is('/users') ? 'nav-active' : '' }}">
         <a class="nav-link" href="#">
             <i class="fas fa-user" aria-hidden="true"></i>
@@ -18,6 +19,7 @@
             </li>
         </ul>
     </li>
+    @endadmin
     <li class="nav-parent {{ request()->is('/leaders') ? 'nav-active' : '' }}">
         <a class="nav-link" href="#">
             <i class="fas fa-walking" aria-hidden="true"></i>
@@ -44,6 +46,7 @@
             </li>
         </ul>
     </li>
+    @admin
     <li class="nav-parent {{ request()->is('/campain') ? 'nav-active' : '' }}">
         <a class="nav-link" href="#">
             <i class="fas fa-tools" aria-hidden="true"></i>
@@ -62,6 +65,7 @@
             </li>
         </ul>
     </li>
+    @endadmin
 {{--    <li class="nav-parent {{ request()->is('/reports') ? 'nav-active' : '' }}">--}}
 {{--        <a class="nav-link" href="#">--}}
 {{--            <i class="fas fa-print" aria-hidden="true"></i>--}}

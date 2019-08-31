@@ -2,6 +2,11 @@
 
 namespace App\Http\Controllers;
 
+
+use App\Leader;
+use App\Sector;
+use App\User;
+use App\Voter;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -27,7 +32,11 @@ class HomeController extends Controller
             case 'auxiliar':
                     return view('home');
             case 'admin':
-                    return view('home');
+                    $nUsers = User::count();
+                    $nVoters = Voter::count();
+                    $nLeaders = Leader::count();
+                    $nSectors = Sector::count();
+                    return view('home',compact('nLeaders','nSectors','nUsers','nVoters'));
                 break;
             default:break;
         }
