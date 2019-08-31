@@ -23,7 +23,7 @@ class ReporterController extends Controller
 //        return view('admin.print.leaderVotantes',compact('leader'));
         $pdf = PDF::loadView('admin.print.leaderVotantes', compact('leader'))
             ->setPaper('legal')
-            ->setOrientation('portrait')
+            ->setOrientation('landscape')
             ->setOption('margin-bottom', 15)
             ->setOption('encoding', 'UTF-8');
         return $pdf->download('Reporte'.$leader->full_name.'.pdf');

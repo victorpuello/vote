@@ -2,7 +2,7 @@
     <div class="row justify-content-md-center">
         <div class="col-sm-1 mt-0 position-absolute">
             <div class="ib ml-5">
-                <img class="ml-5" style="width: 50%;" src="{{asset("img/logo_campain.png")}}" alt="Logo" />
+                <img class="ml-5" style="width: 20%;" src="{{asset("img/logo_campain.png")}}" alt="Logo" />
             </div>
         </div>
         <div class="col-sm-6 text-right mt-3 mb-3">
