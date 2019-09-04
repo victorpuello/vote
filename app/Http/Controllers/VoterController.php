@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 
+use App\Events\NotificationVoterCreate;
 use App\Http\Requests\CreateVoterRequest;
 use App\Http\Requests\UpdateVoterRequest;
 use App\Leader;
@@ -46,6 +47,7 @@ class VoterController extends Controller
     public function store(CreateVoterRequest $request)
     {
         $voter = Voter::create($request->all());
+        event(new NotificationVoterCreate($voter));
         Alert::message('Votante: '.$voter->full_name.', Guardado con exito','success');
         return redirect()->route('voters.index');
     }
