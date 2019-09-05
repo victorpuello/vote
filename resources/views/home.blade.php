@@ -1,9 +1,13 @@
 @extends('layouts.app')
 @section('titulo', "Bienvenido")
+@section('styles')
+    <link rel="stylesheet" href="{{asset('vendor/morris/morris.css')}}" />
+    <link rel="stylesheet" href="{{asset('vendor/chartist/chartist.min.css')}}" />
+@stop
 @section('content')
-    <div class="container">
+{{--    <div class="container">--}}
         @admin
-        <div class="row">
+        <div class="row p-0">
             <div class="col-lg-3">
                 <section class="card card-featured-left card-featured-primary mb-4">
                     <div class="card-body">
@@ -102,13 +106,85 @@
             </div>
         </div>
         @endadmin
-    </div>
+        <div class="row p-0">
+            <div class="col-xl-6">
+                <section class="card card-warning">
+                    <header class="card-header ">
+                        <div class="card-actions">
+                            <a href="#" class="card-action card-action-toggle" data-card-toggle></a>
+                            <a href="#" class="card-action card-action-dismiss" data-card-dismiss></a>
+                        </div>
+
+                        <h2 class="card-title">Mejores Líderes</h2>
+                    </header>
+                    <div class="card-body">
+                        <table class="table table-responsive-md table-striped mb-0">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Nombre</th>
+                                <th>Sector</th>
+                                <th>Votantes</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            @foreach($leaders as $key => $leader)
+                                <tr>
+                                    <td>{{$key+1}}</td>
+                                    <td>{{$leader->full_name}}</td>
+                                    <td><span class="badge badge-success">{{$leader->sector->name}}</span></td>
+                                    <td>
+                                        {{$leader->voters_count}}
+                                    </td>
+                                </tr>
+                            @endforeach
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+            <div class="col-xl-6">
+                <section class="card card-success">
+                    <header class="card-header">
+                        <div class="card-actions">
+                            <a href="#" class="card-action card-action-toggle" data-card-toggle></a>
+                            <a href="#" class="card-action card-action-dismiss" data-card-dismiss></a>
+                        </div>
+
+                        <h2 class="card-title">Votantes por sectores</h2>
+                    </header>
+                    <div class="card-body">
+
+                        <!-- Flot: Bars -->
+                        <div class="chart chart-md" id="flotBars"></div>
+                        <script type="text/javascript">
+
+                            var flotBarsData = [
+                                @foreach($sectors as $sector)
+                                    ["{{$sector->short_name}}", {{$sector->voters_count}}],
+                                @endforeach
+                            ];
+                        </script>
+
+                    </div>
+                </section>
+            </div>
+
+        </div>
+{{--    </div>--}}
 @endsection
 @section('script')
 
 @endsection
         @section('scriptfin')
             <script src="{{asset('js/count.js')}}"></script>
+
+            <script src="{{asset('vendor/flot/jquery.flot.js')}}"></script>
+            <script src="{{asset('vendor/flot/jquery.flot.pie.js')}}"></script>
+            <script src="{{asset('vendor/flot.tooltip/jquery.flot.tooltip.js')}}"></script>
+            <script src="{{asset('vendor/flot/jquery.flot.categories.js')}}"></script>
+            <script src="{{asset('vendor/flot/jquery.flot.resize.js')}}"></script>
+
+            <!--end::Page Scripts -->
             <script src="{{asset('js/examples/examples.charts.js')}}"></script>
-    <!--end::Page Scripts -->
 @endsection

@@ -152,11 +152,11 @@ Theme Version: 	2.2.0
 	(function() {
 		if( $('#flotBars').get(0) ) {
 			var plot = $.plot('#flotBars', [flotBarsData], {
-				colors: ['#8CC9E8'],
+				colors: ['#007bff'],
 				series: {
 					bars: {
 						show: true,
-						barWidth: 0.8,
+						barWidth: 0.7,
 						align: 'center'
 					}
 				},
@@ -172,14 +172,17 @@ Theme Version: 	2.2.0
 					labelMargin: 15,
 					backgroundColor: 'transparent'
 				},
+                legend: {
+                    show: true
+                },
 				tooltip: true,
 				tooltipOpts: {
-					content: '%y',
+					content: '%y'+' Votantes',
 					shifts: {
 						x: -10,
 						y: 20
 					},
-					defaultTheme: false
+					defaultTheme: true
 				}
 			});
 		}

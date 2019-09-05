@@ -42,5 +42,10 @@ class Sector extends Model
     public function getCountLeadersAttribute(){
         return count($this->leaders);
     }
+    public function getShortNameAttribute(){
+        $longitud = strlen($this->attributes['name']);
+//        dd(substr($this->attributes['name'],3,3));
+        return substr($this->attributes['name'],3,4);
+    }
 
 }
