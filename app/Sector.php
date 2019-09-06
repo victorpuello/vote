@@ -47,5 +47,8 @@ class Sector extends Model
 //        dd(substr($this->attributes['name'],3,3));
         return substr($this->attributes['name'],3,4);
     }
+    public function setNameAttribute($name){
+        $this->attributes['name'] = strtoupper($name);
+    }
 
 }

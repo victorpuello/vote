@@ -35,4 +35,10 @@ class Point extends Model
     public function getCountVotersAttribute(){
         return count($this->voters);
     }
+    public function setNameAttribute($name){
+        $this->attributes['name'] = strtoupper($name);
+    }
+    public function setAddressAttribute($address){
+        $this->attributes['name'] = strtoupper($address);
+    }
 }

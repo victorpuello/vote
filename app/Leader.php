@@ -47,4 +47,11 @@ class Leader extends Model
     public function getFullNameAttribute(){
         return $this->name .' '.$this->lastname;
     }
+    public function setNameAttribute($name){
+        $this->attributes['name'] = strtoupper($name);
+    }
+    public function setLastnameAttribute($lastname)
+    {
+        $this->attributes['lastname'] = strtoupper($lastname);
+    }
 }
