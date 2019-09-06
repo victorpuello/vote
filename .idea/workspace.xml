@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2012f37-4c2f-4cf2-900d-26e0157fe035" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Listeners/NotificationVoterCreateListener.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Listeners/NotificationVoterCreateListener.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Clases/SMS.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Clases/SMS.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sms.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/sms.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -206,7 +208,7 @@
       <workItem from="1567545785387" duration="7091000" />
       <workItem from="1567632511393" duration="599000" />
       <workItem from="1567657483387" duration="12555000" />
-      <workItem from="1567748314760" duration="788000" />
+      <workItem from="1567748314760" duration="2230000" />
     </task>
     <servers />
   </component>

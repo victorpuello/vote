@@ -7,6 +7,7 @@ namespace App\Clases;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Notification;
+use Illuminate\Support\Facades\Config;
 
 class SMS extends Notification implements ShouldQueue
 {
@@ -33,8 +34,9 @@ class SMS extends Notification implements ShouldQueue
         $this->sms = $sms;
         $this->fecha = '';
         $this->referencia = $referencia;
-        $this->cliente = env('HABLAME_CLIENTE');
-        $this->key = env('HABLAME_APP_KEY');
+        $this->cliente = Config::get('sms.cliente');
+        $this->key = Config::get('sms.key');
+//        dd($this->cliente,$this->key);
     }
 
     /**
