@@ -26,7 +26,7 @@ class NotificationVoterCreateListener
     public function handle(NotificationVoterCreate $event)
     {
         $voter = $event->voter;
-        $sms = new SMS($voter->phone,"Bienvenido ".$voter->full_name." gracias por confiar en nuestro proyecto politico.","Bienvenida");
+        $sms = new SMS($voter->phone,"Bienvenido ".$voter->full_name." gracias por confiar en nuestro proyecto politico, Ingrid Pestana 06 #UnidosPorLaPaz.","Bienvenida");
         $sms->sendSms();
     }
 }
