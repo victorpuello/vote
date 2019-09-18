@@ -11,7 +11,9 @@
             <div class="col-sm-6">
                 <div class="mb-3">
                     <a href="{{route('leaders.create')}}"  class="btn btn-primary on-default simple-ajax-modal ">Agregar <i class="fas fa-plus"></i></a>
+                    @admin
                     <a href="{{route('reports.leaders')}}"  class="btn btn-success on-default ">Reporte <i class="fas fa-print"></i></a>
+                    @endadmin
                 </div>
             </div>
         </div>

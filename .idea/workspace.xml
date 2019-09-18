@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2012f37-4c2f-4cf2-900d-26e0157fe035" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/print/leaders.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Exports/LeadersExport.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exports/LeadersExport.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ReporterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ReporterController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/leaders/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/leaders/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/worker.log" beforeDir="false" afterPath="$PROJECT_DIR$/worker.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -215,7 +209,7 @@
       <workItem from="1567657483387" duration="12555000" />
       <workItem from="1567748314760" duration="4188000" />
       <workItem from="1568698456949" duration="47000" />
-      <workItem from="1568835525401" duration="1439000" />
+      <workItem from="1568835525401" duration="1780000" />
     </task>
     <servers />
   </component>
