@@ -40,6 +40,7 @@
     @include('partials.scriptdt')
 @endsection
 @section('scriptfin')
+    <script src="{{asset('vendor/popper/umd/popper.min.js')}}"></script>
     <script src="{{asset('js/examples/examples.modals.js')}}"></script>
     <script src="{{asset('js/examples/examples.notifications.js')}}"></script>
     <script src="{{asset('js/tablas/leaders.js')}}"></script>

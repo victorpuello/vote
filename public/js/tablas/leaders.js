@@ -26,12 +26,12 @@
                     { data: "sector",name:'sector', orderable: false, searchable: true },
                     {
                         data: "id", render: function (data, type, row) {
-                            return '<a href="' + inf.data('url') + "/leaders/" + data + '/edit"' + ' class="on-default edit-row btn btn-xs btn-info simple-ajax-modal"><i class="fas fa-pencil-alt"></i>  Editar</a>  ' +
-                                '<a href="#modalEliminar" data-nasg ="'+row.name+'" data-urldestroy = "' + inf.data('url') + '/leaders/' + data +'" class="on-default remove-row modal-basic btn btn-xs btn-danger " >' +
-                                '<i class="far fa-trash-alt"></i> Eliminar' +
-                                '</a>'+'<a href="' + inf.data('url') + "/reports/" + data + '"' + ' class=" ml-1 btn btn-xs btn-success "><i class="fas fa-print"></i>  Reporte</a>  ';
+                            return '<a href="' + inf.data('url') + "/leaders/" + data + '/edit"' + ' class="mb-1 mt-1 on-default edit-row btn btn-xs btn-info simple-ajax-modal" data-toggle="tooltip" data-placement="top" title="Editar"><i class="fas fa-pencil-alt"></i> </a>  ' +
+                                '<a href="#modalEliminar" data-nasg ="'+row.name+'" data-urldestroy = "' + inf.data('url') + '/leaders/' + data +'" class="mb-1 mt-1 mr-1 on-default remove-row modal-basic btn btn-xs btn-danger " data-toggle="tooltip" data-placement="top" title="Eliminar">' +
+                                '<i class="far fa-trash-alt"></i>' +
+                                '</a>'+'<a href="' + inf.data('url') + "/reports/" + data + '"' + ' class=" mb-1 mt-1 mr-1 btn btn-xs btn-success "  data-toggle="tooltip" data-placement="top" title="Reporte"><i class="fas fa-print"></i></a>  ';
                         },
-                        width: "15%"
+
                     }
                 ],
                 buttons: [
