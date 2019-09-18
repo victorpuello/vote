@@ -1,0 +1,22 @@
+<table>
+    <thead>
+    <tr>
+        <th>N°</th>
+        <th>Nombre</th>
+        <th>Sector</th>
+        <th>Votantes</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach($leaders as $key => $leader)
+        <tr>
+            <td>{{$key+1}}</td>
+            <td>{{$leader->full_name}}</td>
+            <td>{{$leader->sector->name}}</td>
+            <td>
+                {{$leader->voters_count}}
+            </td>
+        </tr>
+    @endforeach
+    </tbody>
+</table>

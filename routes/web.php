@@ -28,7 +28,7 @@ Route::group(['prefix'=>'campain'],function (){
 });
 Route::get('/reports','ReporterController@index')->name('reports.index');
 Route::get('/reports/voters','ReporterController@voters')->name('reports.voters');
-Route::get('/reports/{leader}','ReporterController@leaderVoters')->name('reports.leader.voters');
+Route::get('/reports/leaders','ReporterController@leaderVoters')->name('reports.leaders');
 Route::get('/msg', function () {
     $sm = new SendMessageWhatsapp();
     $sm->sendMessage("Mensaje Para mi reina",3215496008);

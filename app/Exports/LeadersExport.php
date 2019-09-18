@@ -3,15 +3,19 @@
 namespace App\Exports;
 
 use App\Leader;
+use Illuminate\Contracts\View\View;
 use Maatwebsite\Excel\Concerns\FromCollection;
+use Maatwebsite\Excel\Concerns\FromView;
 
-class LeadersExport implements FromCollection
+class LeadersExport implements FromView
 {
+
     /**
-    * @return \Illuminate\Support\Collection
-    */
-    public function collection()
+     * @return View
+     */
+    public function view(): View
     {
-        return Leader::all();
+        $leaders = Leader::withCount('voters')->orderByDesc('voters_count')->get();
+        return view('admin.print.leaders',['leaders' => $leaders]);
     }
 }
