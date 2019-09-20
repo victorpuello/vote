@@ -35,8 +35,6 @@ class SMS extends Notification implements ShouldQueue
         $this->fecha = '';
         $this->referencia = $referencia;
         $this->cliente = Config::get('sms.cliente');
-        $this->key = Config::get('sms.key');
-//        dd($this->cliente,$this->key);
     }
 
     /**

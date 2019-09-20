@@ -1,18 +1,4 @@
 <?php
-
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
-use App\Clases\SendMessageWhatsapp;
-
 Route::get('/', function () {
     return view('auth.login');
 });
@@ -29,8 +15,7 @@ Route::group(['prefix'=>'campain'],function (){
 Route::get('/reports','ReporterController@index')->name('reports.index');
 Route::get('/reports/voters','ReporterController@voters')->name('reports.voters');
 Route::get('/reports/leaders','ReporterController@leaderVoters')->name('reports.leaders');
-Route::get('/msg', function () {
-    $sm = new SendMessageWhatsapp();
-    $sm->sendMessage("Mensaje Para mi reina",3215496008);
-    return "Enviado con exito";
-});
+Route::get('/reports/{leader}','ReporterController@votersLeader')->name('reports.voters.leader');
+
+Route::post('/config/sms','ConfigController@storeSms')->name('config.sms');
+Route::get('/config','ConfigController@index')->name('config');

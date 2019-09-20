@@ -49,21 +49,27 @@
     @admin
     <li class="nav-parent {{ request()->is('/campain') ? 'nav-active' : '' }}">
         <a class="nav-link" href="#">
-            <i class="fas fa-tools" aria-hidden="true"></i>
+            <i class="fas fa-bullhorn" aria-hidden="true"></i>
             <span>Campaña</span>
         </a>
         <ul class="nav nav-children">
             <li>
                 <a class="nav-link" href="{{route('points.index')}}">
-                    Puestos
+                    <i class="fas fa-box" aria-hidden="true"></i>
+                    <span>Puestos</span>
                 </a>
             </li>
             <li>
                 <a class="nav-link" href="{{route('sectors.index')}}">
-                    Sectores
+                    <i class="fas fa-map-marked-alt" aria-hidden="true"></i>
+                    <span>Sectores</span>
                 </a>
             </li>
         </ul>
+        <a class="nav-link" href="{{route('config')}}">
+            <i class="fas fa-tools" aria-hidden="true"></i>
+            <span>Configuración</span>
+        </a>
     </li>
     @endadmin
 {{--    <li class="nav-parent {{ request()->is('/reports') ? 'nav-active' : '' }}">--}}
