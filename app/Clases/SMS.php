@@ -7,6 +7,7 @@ namespace App\Clases;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Notification;
+use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Config;
 
 class SMS extends Notification implements ShouldQueue
@@ -14,6 +15,7 @@ class SMS extends Notification implements ShouldQueue
 
     use Queueable;
     protected $url;
+    protected $url2;
     protected $numero;
     protected $sms;
     protected $fecha;
@@ -27,28 +29,34 @@ class SMS extends Notification implements ShouldQueue
      * @param string $sms
      * @param string $referencia
      */
-    public function __construct(int $numero, string $sms, string $referencia)
+    public function __construct(int $numero=0, string $sms="", string $referencia="")
     {
         $this->url = 'https://api.hablame.co/sms/envio/';
+        $this->url2 = 'https://api.hablame.co/saldo/consulta/index.php';
         $this->numero = $numero;
         $this->sms = $sms;
         $this->fecha = '';
         $this->referencia = $referencia;
         $this->cliente = Config::get('sms.cliente');
+        $this->key = Config::get('sms.key');
     }
 
+
     /**
+     * @param string $type
      * @return array
      */
-    public function getOptions(){
+    public function getOptions(string $type="saldo"){
         $data = array(
             'cliente' => $this->cliente,
             'api' => $this->key,
-            'numero' => $this->numero,
-            'sms' => $this->sms,
-            'fecha' => '', //(campo opcional) Fecha de envio, si se envia vacio se envia inmediatamente (Ejemplo: 2017-12-31 23:59:59)
-            'referencia' => $this->referencia,
         );
+        if ($type ==="sms"){
+            Arr::add($data,'numero' , $this->numero);
+            Arr::add($data,'sms' , $this->sms);
+            Arr::add($data,'fecha' , '');
+            Arr::add($data,'referencia' , $this->referencia);
+        }
         return array(
             'http' => array(
                 'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
@@ -61,8 +69,14 @@ class SMS extends Notification implements ShouldQueue
      * @return string
      */
     public function sendSms(){
-        $context  = stream_context_create($this->getOptions());
+        $context  = stream_context_create($this->getOptions('sms'));
         $result =  json_decode((file_get_contents($this->url,false,$context)),true);
         return $result["resultado"] === 0 ? 'Se ha enviado el SMS exitosamente':'ha ocurrido un error!!';
+    }
+
+    public function saldo(){
+        $context  = stream_context_create($this->getOptions());
+        $result = json_decode((file_get_contents($this->url2, false, $context)), true);
+        return $result["resultado"] === 0 ? number_format($result["saldo"],0,',','.'):$result["resultado_t"];
     }
 }

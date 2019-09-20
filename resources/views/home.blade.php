@@ -91,20 +91,20 @@
                         <div class="widget-summary">
                             <div class="widget-summary-col widget-summary-col-icon">
                                 <div class="summary-icon bg-quaternary">
-                                    <i class="fas fa-user" data-appear-animation="bounceIn" data-appear-animation-delay="0"
+                                    <i class="fas fa-money-bill" data-appear-animation="bounceIn" data-appear-animation-delay="0"
                                        data-appear-animation-duration="1s"></i>
                                 </div>
                             </div>
                             <div class="widget-summary-col mt-3">
                                 <div class="summary" style="min-height: 48px;">
-                                    <h4 class="title">Usuarios</h4>
+                                    <h4 class="title">Saldo en $ COP SMS</h4>
                                     <div class="info">
-                                        <strong class="timer amount count-title count-number" data-to="{{$nUsers}}"
-                                                data-speed="3500"></strong>
+                                        <strong class="timer amount count-title count-number" data-to="{{$saldo}}"
+                                                data-speed="3500">$ </strong>
                                     </div>
                                 </div>
                                 <div class="summary-footer">
-                                    <a href="{{route('users.index')}}" class="text-muted text-uppercase">(Ver Todos)</a>
+                                    <a href="https://api.whatsapp.com/send?phone=573215496008&text=Necesito%20saldo%20para%20los%20SMS" target="_blank" class="text-muted text-uppercase">Solicitar</a>
                                 </div>
                             </div>
                         </div>

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 
+use App\Clases\SMS;
 use App\Leader;
 use App\Sector;
 use App\User;
@@ -35,12 +36,14 @@ class HomeController extends Controller
         $nSectors = Sector::count();
         $leaders = Leader::withCount('voters')->orderByDesc('voters_count')->take(10)->get();
         $leaders->load('sector');
+        $saldo = (new SMS())->saldo();
+//        dd($saldo);
         $sectors = Sector::withCount('voters')->orderByDesc('voters_count')->take(10)->get();
         switch (currentPerfil()){
             case 'auxiliar':
-                return view('home',compact('nLeaders','nSectors','nUsers','nVoters','leaders','sectors'));
+                return view('home',compact('nLeaders','nSectors','nUsers','nVoters','leaders','sectors','saldo'));
             case 'admin':
-                return view('home',compact('nLeaders','nSectors','nUsers','nVoters','leaders','sectors'));
+                return view('home',compact('nLeaders','nSectors','nUsers','nVoters','leaders','sectors','saldo'));
                 break;
             default:break;
         }

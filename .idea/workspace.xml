@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2012f37-4c2f-4cf2-900d-26e0157fe035" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Clases/Welcome.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/config/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ReporterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ReporterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Listeners/NotificationVoterCreateListener.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Listeners/NotificationVoterCreateListener.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/sms.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/sms.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/menus/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/menus/admin.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/worker.log" beforeDir="false" afterPath="$PROJECT_DIR$/worker.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Clases/SMS.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Clases/SMS.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -218,7 +213,7 @@
       <workItem from="1568698456949" duration="47000" />
       <workItem from="1568835525401" duration="3862000" />
       <workItem from="1568862667668" duration="9523000" />
-      <workItem from="1568949638614" duration="11346000" />
+      <workItem from="1568949638614" duration="15471000" />
     </task>
     <servers />
   </component>
