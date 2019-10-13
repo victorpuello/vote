@@ -15,7 +15,7 @@ class VoterController extends Controller
      */
     public function index()
     {
-        $voters = Voter::with('leader','sector','point')->orderByDesc('name');
+        $voters = Voter::with('leader','sector','point')->orderByDesc('point_id')->orderBy('table_number','asc');
         return datatables()->eloquent($voters)
             ->addColumn('leader',function (Voter $voter){return $voter->leader->full_name;})
             ->addColumn('sector',function (Voter $voter){return $voter->sector->name;})

@@ -63,7 +63,7 @@ Theme Version: 	2.2.0
                 pageSize: 'FOLIO',
                 orientation: 'landscape',
                 exportOptions: {
-                    columns: [2, 3, 4, 5, 6, 7, 8]
+                    columns: [2, 3, 4, 5, 6, 7, 8, 9]
                 },
                 margin: [0, 0, 0, 12],
                 alignment: 'center',
@@ -77,7 +77,7 @@ Theme Version: 	2.2.0
                     text: 'Excel',
                     title: 'Listado de Votantes',
                     exportOptions: {
-                        columns: [2, 3, 4, 5, 6, 7, 8],
+                        columns: [2, 3, 4, 5, 6, 7, 8,9],
                     }
                 }]
         });
