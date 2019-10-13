@@ -24,6 +24,7 @@ class CreateMessageRequest extends FormRequest
     public function rules()
     {
         return [
+            'name' => 'required|string|max:160|min:6',
             'message' => 'required|string|max:160|min:16',
             'type' => 'required in:welcome,campaign,information'
         ];

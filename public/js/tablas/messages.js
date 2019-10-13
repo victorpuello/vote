@@ -1,7 +1,7 @@
 (function($) {
 
     'use strict';
-    var table = $('#sectors');
+    var table = $('#messages');
     const inf = $('#inf');
     $(document).ready(function () {
             table.DataTable({
@@ -20,16 +20,13 @@
                     {data: null, defaultContent: '', className: 'control', orderable: false, searchable: false },
                     {data: "id", name: "id", className: 'never', orderable: false, visible: false, searchable: false},
                     { data: "name", name:"name",orderable: true, searchable: true },
-                    { data: "lideres", name:"lideres",orderable: true, searchable: true },
-                    { data: "votantes", name:"votantes",orderable: false, searchable: false },
+                    { data: "message", name:"message",orderable: true, searchable: true },
+                    { data: "type", name:"votantes",orderable: false, searchable: false },
                     {
                         data: "id", render: function (data, type, row) {
-                            return '<a href="' + inf.data('url') + "/campain/sectors/" + data + '/edit"' + ' class="on-default edit-row simple-ajax-modal"><i class="fas fa-pencil-alt"></i></a>  ' +
-                                '<a href="#modalEliminar" data-nasg ="'+row.name+'" data-urldestroy = "' + inf.data('url') + '/campain/sectors/' + data +'" class="on-default remove-row modal-basic " >' +
+                            return '<a href="' + inf.data('url') + "/campain/messages/" + data + '/edit"' + ' class="on-default edit-row simple-ajax-modal"><i class="fas fa-pencil-alt"></i></a>  ' +
+                                '<a href="#modalEliminar" data-nasg ="'+row.name+'" data-urldestroy = "' + inf.data('url') + '/campain/messages/' + data +'" class="on-default remove-row modal-basic " >' +
                                 '<i class="far fa-trash-alt"></i>' +
-                                '</a>' +
-                                '<a href="#modalEliminar" data-nasg ="'+row.name+'" data-urldestroy = "' + inf.data('url') + '/campain/sectors/' + data +'" class="on-default remove-row modal-basic pl-1 " >' +
-                                '<i class="far fa-envelope"></i>' +
                                 '</a>';
                         },
                     }

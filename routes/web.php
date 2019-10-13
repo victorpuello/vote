@@ -11,6 +11,7 @@ Route::resource('voters','VoterController');
 Route::group(['prefix'=>'campain'],function (){
     Route::resource('points','PointController');
     Route::resource('sectors','SectorController');
+    Route::resource('message','MessageController');
 });
 Route::get('/reports','ReporterController@index')->name('reports.index');
 Route::get('/reports/voters','ReporterController@voters')->name('reports.voters');

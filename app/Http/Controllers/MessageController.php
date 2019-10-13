@@ -17,7 +17,8 @@ class MessageController extends Controller
      */
     public function index()
     {
-        //
+        $msg = Message::all();
+        return view('admin.messages.index', compact('msg'));
     }
 
     /**
@@ -27,7 +28,7 @@ class MessageController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.messages.ajax.create');
     }
 
     /**
@@ -38,6 +39,7 @@ class MessageController extends Controller
      */
     public function store(CreateMessageRequest $request)
     {
+        dd('fuck off');
         Message::create($request->all());
         Alert::message('SMS Guardado con exito','success');
         return  redirect()->back();
@@ -62,7 +64,7 @@ class MessageController extends Controller
      */
     public function edit(Message $message)
     {
-        //
+        dd('vale');
     }
 
     /**
@@ -72,8 +74,9 @@ class MessageController extends Controller
      * @param  \App\Message  $message
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateMessageRequest $request, Message $message)
+    public function update(Request $request, Message $message)
     {
+        dd('ajapta');
         $message->update($request->all());
         Alert::message('SMS Actualizado con exito','success');
         return redirect()->back();

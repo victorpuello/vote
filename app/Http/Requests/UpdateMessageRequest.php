@@ -23,8 +23,8 @@ class UpdateMessageRequest extends FormRequest
      */
     public function rules()
     {
-//        dd($this->request->all());
         return [
+            'name' => 'required|string|max:160|min:6',
             'message' => 'required|string|max:160|min:16',
             'type' => 'required | in:welcome,campaign,information'
         ];

@@ -65,6 +65,12 @@
                     <span>Sectores</span>
                 </a>
             </li>
+            <li>
+                <a class="nav-link" href="{{route('message.index')}}">
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                    <span>Mensajes</span>
+                </a>
+            </li>
         </ul>
         <a class="nav-link" href="{{route('config')}}">
             <i class="fas fa-tools" aria-hidden="true"></i>

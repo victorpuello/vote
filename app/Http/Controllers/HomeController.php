@@ -37,7 +37,7 @@ class HomeController extends Controller
         $leaders = Leader::withCount('voters')->orderByDesc('voters_count')->take(10)->get();
         $leaders->load('sector');
         $saldo = (new SMS())->saldo();
-//        dd($saldo);
+        //dd($saldo);
         $sectors = Sector::withCount('voters')->orderByDesc('voters_count')->take(10)->get();
         switch (currentPerfil()){
             case 'auxiliar':
