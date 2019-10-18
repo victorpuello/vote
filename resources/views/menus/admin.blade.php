@@ -19,7 +19,6 @@
             </li>
         </ul>
     </li>
-    @endadmin
     <li class="nav-parent {{ request()->is('/leaders') ? 'nav-active' : '' }}">
         <a class="nav-link" href="#">
             <i class="fas fa-walking" aria-hidden="true"></i>
@@ -46,7 +45,6 @@
             </li>
         </ul>
     </li>
-    @admin
     <li class="nav-parent {{ request()->is('/campain') ? 'nav-active' : '' }}">
         <a class="nav-link" href="#">
             <i class="fas fa-bullhorn" aria-hidden="true"></i>
@@ -78,17 +76,10 @@
         </a>
     </li>
     @endadmin
-{{--    <li class="nav-parent {{ request()->is('/reports') ? 'nav-active' : '' }}">--}}
-{{--        <a class="nav-link" href="#">--}}
-{{--            <i class="fas fa-print" aria-hidden="true"></i>--}}
-{{--            <span>Reportes</span>--}}
-{{--        </a>--}}
-{{--        <ul class="nav nav-children">--}}
-{{--            <li>--}}
-{{--                <a class="nav-link" href="{{route('reports.index')}}">--}}
-{{--                    Reportes--}}
-{{--                </a>--}}
-{{--            </li>--}}
-{{--        </ul>--}}
-{{--    </li>--}}
+    <li>
+            <a class="nav-link {{ request()->is('/marcado') ? 'nav-active' : '' }}" href="{{route('marcado')}}">
+                <i class="fas fa-check" aria-hidden="true"></i>
+                <span>Votación</span>
+            </a>
+        </li>
 </ul>

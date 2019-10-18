@@ -52,15 +52,10 @@ class VoterController extends Controller
         return redirect()->route('voters.index');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Voter  $voter
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Voter $voter)
+    public function show($id)
     {
-        //
+        $voter = Voter::findOrFail($id);
+        return view('auxiliar.voters.partials.edit',compact('voter'));
     }
 
     /**
@@ -100,5 +95,13 @@ class VoterController extends Controller
         $voter->delete();
         Alert::message('Votante: '.$voter->full_name.', se ha eliminado con exito','warning');
         return redirect()->route('voters.index');
+    }
+
+
+    public function sufragar(Voter $voter, Request $request)
+    {
+        $voter->update(['sufrago'=> 1]);
+        Alert::message('Votante: '.$voter->full_name.', se ha votado con exito','success');
+        return redirect()->route('marcado');
     }
 }

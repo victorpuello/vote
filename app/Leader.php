@@ -29,6 +29,7 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Leader whereSectorId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Leader whereUpdatedAt($value)
  * @mixin \Eloquent
+ * @property-read mixed $full_name
  */
 class Leader extends Model
 {

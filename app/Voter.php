@@ -35,6 +35,10 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Voter whereTableNumber($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Voter whereUpdatedAt($value)
  * @mixin \Eloquent
+ * @property-read mixed $full_name
+ * @property-read \App\Leader $leader
+ * @property-read \App\Point $point
+ * @property-read \App\Sector $sector
  */
 class Voter extends Model
 {

@@ -20,6 +20,10 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Sector whereName($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Sector whereUpdatedAt($value)
  * @mixin \Eloquent
+ * @property-read mixed $count_leaders
+ * @property-read mixed $count_voters
+ * @property-read mixed $short_name
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Voter[] $voters
  */
 class Sector extends Model
 {

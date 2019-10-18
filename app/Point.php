@@ -21,6 +21,8 @@ use App\Voter as Votantes;
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Point whereName($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Point whereUpdatedAt($value)
  * @mixin \Eloquent
+ * @property-read mixed $count_voters
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Voter[] $voters
  */
 class Point extends Model
 {

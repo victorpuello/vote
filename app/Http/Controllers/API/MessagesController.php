@@ -17,12 +17,13 @@ class MessagesController extends Controller{
 
     public function show($id){
         //
-    }  public function edit($id){
-        dd('ddd')
+    }
+    public function edit($id){
+        //
     }
 
    public function update(Request $request, $id){
-    dd('ddd');
+    //
     }
 
     public function destroy($id){
