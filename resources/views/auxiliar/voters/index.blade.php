@@ -45,8 +45,8 @@
 					<div class="card-body">
                             <div style="display: none;" class="current-user text-center">
                                     <img src="img/!logged-user.jpg" alt="John Doe" class="rounded-circle user-image" />
-                                    <p class="user-name text-dark m-0">John Doe</p>
-                                    <a href="#" id="enlace" class="btn btn-success simple-ajax-modal">Registrar</a>
+                                    <p class="user-name text-dark m-0 line-height-lg">John Doe</p>
+                                    <a href="#" id="enlace" class="btn btn-success simple-ajax-modal mt-3">Registrar</a>
                                 </div>
 						<form id="searchForm">
 							<div class="form-group mb-3">
@@ -54,15 +54,15 @@
 									<input id="pwd" type="tex" class="form-control form-control-lg" placeholder="Cedula" />
 									<span class="input-group-append">
 										<span class="input-group-text">
-											<i class="fas fa-id"></i>
+											<i class="fas fa-id-card"></i>
 										</span>
 									</span>
 								</div>
 							</div>
 
 							<div class="row">
-								<div class="col-6"  >
-									<button type="submit" class="btn btn-success pull-right">Buscar</button>
+								<div class="col-12 text-center"  >
+									<button type="submit" class="btn btn-success pull-none">Buscar</button>
 								</div>
 							</div>
 						</form>

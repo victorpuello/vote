@@ -29,7 +29,7 @@ class SMS extends Notification implements ShouldQueue
      * @param string $sms
      * @param string $referencia
      */
-    public function __construct(int $numero=0, string $sms="", string $referencia="")
+    public function __construct($numero, $sms, $referencia)
     {
         $this->url = 'https://api.hablame.co/sms/envio/';
         $this->url2 = 'https://api.hablame.co/saldo/consulta/index.php';
@@ -52,10 +52,10 @@ class SMS extends Notification implements ShouldQueue
             'api' => $this->key,
         );
         if ($type ==="sms"){
-            Arr::add($data,'numero' , $this->numero);
-            Arr::add($data,'sms' , $this->sms);
-            Arr::add($data,'fecha' , '');
-            Arr::add($data,'referencia' , $this->referencia);
+            $data['numero'] = $this->numero;
+            $data['sms'] = $this->sms;
+            $data['fecha'] = '';
+            $data['referencia'] = $this->referencia;
         }
         return array(
             'http' => array(

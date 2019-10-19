@@ -7,7 +7,7 @@
             {!! Form::model($voter,['route'=>['voter.sufragar',$voter],'method' => 'PUT','class' => 'form-horizontal form-bordered', 'id'=>'form-edit']) !!}
             <div class="modal-wrapper">
                 <div class="modal-text">
-                        <p>Estas seguro registrar este voto de {{$voter->full_name}} ..? </p>
+                        <p>El señor(a): <strong>{{$voter->full_name}}</strong>, vota en la mesa <strong>{{$voter->table_number}}</strong> - Puesto: <strong>{{$voter->point->name}}</strong> </p>
                         {!! Form::hidden('sufrago',1) !!}
                 </div>
             </div>

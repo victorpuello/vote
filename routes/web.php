@@ -10,9 +10,10 @@ Route::post('search','SearchController')->name('search');
 
 Route::resource('leaders','LeaderController');
 
+Route::resource('voters','VoterController')->except('show');
 Route::get('voters/{id}','VoterController@show')->name('voter.show');
 Route::put('voters/sufragar/{voter}', 'VoterController@sufragar')->name('voter.sufragar');
-Route::resource('voters','VoterController')->except('show');
+
 Route::group(['prefix'=>'campain'],function (){
     Route::resource('points','PointController');
     Route::resource('sectors','SectorController');
