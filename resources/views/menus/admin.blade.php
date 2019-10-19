@@ -69,6 +69,12 @@
                     <span>Mensajes</span>
                 </a>
             </li>
+            <li>
+                <a class="nav-link" href="{{route('candidates.index')}}">
+                    <i class="fas fa-user-shield" aria-hidden="true"></i>
+                    <span>Candidatos</span>
+                </a>
+            </li>
         </ul>
         <a class="nav-link" href="{{route('config')}}">
             <i class="fas fa-tools" aria-hidden="true"></i>

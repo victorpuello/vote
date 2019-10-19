@@ -1,11 +1,11 @@
 <div id="modalHeaderColorPrimary" class="modal-block modal-header-color modal-block-primary ">
     <section class="card">
-        {!! Form::open(['route' => 'candidates.store', 'method' => 'POST','files'=>true,'class' => 'form-horizontal form-bordered']) !!}
+        {!! Form::open(['route' => 'e14.store', 'method' => 'POST','files'=>true,'class' => 'form-horizontal form-bordered']) !!}
         <header class="card-header">
-            <h2 class="card-title">Crear candidato nuevo </h2>
+            <h2 class="card-title">Crear E14 </h2>
         </header>
         <div class="card-body">
-            @include('admin.candidates.partials.fields')
+            @include('admin.formato.partials.fields')
         </div>
         <footer class="card-footer">
             <div class="row">

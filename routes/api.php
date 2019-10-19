@@ -24,6 +24,8 @@ Route::prefix('v1')->name('api.')->group(function () {
         'users' => 'API\UserController',
         'points' => 'API\PointController',
         'sectors' => 'API\SectorController',
-        'messages' => 'API\MessagesController'
+        'messages' => 'API\MessagesController',
+        'candidates' => 'API\CandidateController',
+        'e14' => 'API\E14Controller',
     ]);
 });

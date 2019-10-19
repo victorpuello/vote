@@ -1,10 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\API;
 
 use App\E14;
-use App\Point;
-use App\Table;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 class E14Controller extends Controller
@@ -16,21 +15,7 @@ class E14Controller extends Controller
      */
     public function index()
     {
-        $e14 = E14::all();
-        $points = Point::pluck('name','id');
-        return view('admin.formato.index',compact('e14','points'));
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        $tables = Table::pluck('name','id');
-        
-        return view('admin.formato.ajax.create',compact('tables'));
+        return datatables()->eloquent(E14::query())->toJson();
     }
 
     /**
@@ -47,21 +32,10 @@ class E14Controller extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\E14  $e14
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(E14 $e14)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\E14  $e14
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(E14 $e14)
+    public function show($id)
     {
         //
     }
@@ -70,10 +44,10 @@ class E14Controller extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\E14  $e14
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, E14 $e14)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -81,10 +55,10 @@ class E14Controller extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\E14  $e14
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(E14 $e14)
+    public function destroy($id)
     {
         //
     }

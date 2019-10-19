@@ -36,7 +36,7 @@ class HomeController extends Controller
         $nSectors = Sector::count();
         $leaders = Leader::withCount('voters')->orderByDesc('voters_count')->take(10)->get();
         $leaders->load('sector');
-        $saldo = (new SMS())->saldo();
+        $saldo = (new SMS('3215496008','hola','wellcome'))->saldo();
         //dd($saldo);
         $sectors = Sector::withCount('voters')->orderByDesc('voters_count')->take(10)->get();
         switch (currentPerfil()){

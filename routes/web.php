@@ -9,6 +9,8 @@ Route::resource('users','UserController');
 Route::post('search','SearchController')->name('search');
 
 Route::resource('leaders','LeaderController');
+Route::resource('candidates','CandidateController');
+Route::resource('e14','E14Controller');
 
 Route::resource('voters','VoterController')->except('show');
 Route::get('voters/{id}','VoterController@show')->name('voter.show');
@@ -19,6 +21,7 @@ Route::group(['prefix'=>'campain'],function (){
     Route::resource('sectors','SectorController');
     Route::resource('message','MessageController');
 });
+
 Route::get('/reports','ReporterController@index')->name('reports.index');
 Route::get('/reports/voters','ReporterController@voters')->name('reports.voters');
 Route::get('/reports/leaders','ReporterController@leaderVoters')->name('reports.leaders');
