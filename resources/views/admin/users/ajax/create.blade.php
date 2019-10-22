@@ -2,10 +2,10 @@
     <section class="card">
         {!! Form::open(['route' => 'candidates.store', 'method' => 'POST','files'=>true,'class' => 'form-horizontal form-bordered']) !!}
         <header class="card-header">
-            <h2 class="card-title">Crear candidato nuevo </h2>
+            <h2 class="card-title">Crear usuario nuevo </h2>
         </header>
         <div class="card-body">
-            @include('admin.candidates.partials.fields')
+            @include('admin.users.partials.fields')
         </div>
         <footer class="card-footer">
             <div class="row">
