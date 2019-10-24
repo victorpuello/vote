@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="fixed sidebar-left-collapsed">
+<html class="fixed sidebar-left-collapsed" lang="es">
     <head>
 
         <!-- Basic -->
@@ -41,14 +41,15 @@
 
     </head>
     <body class="loading-overlay-showing "  data-loading-overlay>
-    <div class="loading-overlay">
-        <div class="bounce-loader">
-            <div class="bounce1"></div>
-            <div class="bounce2"></div>
-            <div class="bounce3"></div>
+    <div id="app">
+        <div class="loading-overlay">
+            <div class="bounce-loader">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
         </div>
-    </div>
-        <section class="body">
+        <section class="body" >
 
             <!-- start: header -->
             <header class="header">
@@ -76,16 +77,16 @@
                                 @include('menus.admin')
                             </nav>
                         </div>
-                        <script>
-                            // Maintain Scroll Position
-                            if (typeof localStorage !== 'undefined') {
-                                if (localStorage.getItem('sidebar-left-position') !== null) {
-                                    var initialPosition = localStorage.getItem('sidebar-left-position'),
-                                        sidebarLeft = document.querySelector('#sidebar-left .nano-content');
-                                    sidebarLeft.scrollTop = initialPosition;
-                                }
-                            }
-                        </script>
+{{--                        <script>--}}
+{{--                            // Maintain Scroll Position--}}
+{{--                            if (typeof localStorage !== 'undefined') {--}}
+{{--                                if (localStorage.getItem('sidebar-left-position') !== null) {--}}
+{{--                                    var initialPosition = localStorage.getItem('sidebar-left-position'),--}}
+{{--                                        sidebarLeft = document.querySelector('#sidebar-left .nano-content');--}}
+{{--                                    sidebarLeft.scrollTop = initialPosition;--}}
+{{--                                }--}}
+{{--                            }--}}
+{{--                        </script>--}}
                     </div>
                 </aside>
                 <!-- end: sidebar -->
@@ -125,6 +126,7 @@
                 </div>
             </aside>
         </section>
+    </div>
         <!-- Variables JS-->
         @include ('footer')
         <!-- End Variables JS -->

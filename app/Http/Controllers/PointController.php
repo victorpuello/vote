@@ -51,7 +51,8 @@ class PointController extends Controller
      */
     public function show(Point $point)
     {
-        //
+        $tables = $point->tables;
+        return view('admin.points.show',compact('tables','point'));
     }
 
     /**

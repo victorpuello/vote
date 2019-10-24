@@ -27,5 +27,6 @@ Route::prefix('v1')->name('api.')->group(function () {
         'messages' => 'API\MessagesController',
         'candidates' => 'API\CandidateController',
         'e14' => 'API\E14Controller',
+        'votations' => 'API\VotationsController',
     ]);
 });

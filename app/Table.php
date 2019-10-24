@@ -29,16 +29,19 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 class Table extends Model
 {
     protected $fillable = [
-        'point_id','number','nvotes'
+        'point_id','number','nvoters'
     ];
 
     public function E14()
     {
-        return BelongsTo(E14::class);
+        return $this->belongsTo(E14::class);
     }
 
     public function votation()
     {
         return $this->hasOne(Votation::class);
+    }
+    public function  point(){
+        return $this->belongsTo(Point::class);
     }
 }

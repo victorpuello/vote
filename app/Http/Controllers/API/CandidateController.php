@@ -5,6 +5,7 @@ namespace App\Http\Controllers\API;
 use App\Candidate;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use JamesDordoy\LaravelVueDatatable\Http\Resources\DataTableCollectionResource;
 
 class CandidateController extends Controller
 {
@@ -15,6 +16,15 @@ class CandidateController extends Controller
      */
     public function index()
     {
+//        $length = $request->input('length');
+//        $column = $request->input('column'); //Index
+//        $orderBy = $request->input('dir', 'asc');
+//        $searchValue = $request->input('search');
+//
+//        $query = Candidate::dataTableQuery($column, $orderBy, $searchValue);
+//        $data = $query->paginate($length);
+//
+//        return new DataTableCollectionResource($data);
         return datatables()->eloquent(Candidate::query())->toJson();
     }
 

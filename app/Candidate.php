@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use JamesDordoy\LaravelVueDatatable\Traits\LaravelVueDatatableTrait;
 
 /**
  * App\Candidate
@@ -20,9 +21,19 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Candidate whereName($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Candidate whereUpdatedAt($value)
  * @mixin \Eloquent
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Candidate dataTableQuery($column = 'id', $orderBy = 'asc', $searchValue = '')
  */
 class Candidate extends Model
 {
+    use LaravelVueDatatableTrait;
+    protected $dataTableColumns = [
+        'id' => [
+            'searchable' => false,
+        ],
+        'name' => [
+            'searchable' => true,
+        ],
+    ];
     protected $fillable = [
         'name'
     ];

@@ -24,8 +24,9 @@
                     { data: "votantes", name:"votantes",orderable: false, searchable: false },
                     {
                         data: "id", render: function (data, type, row) {
-                            return '<a href="' + inf.data('url') + "/campain/points/" + data + '/edit"' + ' class="on-default edit-row simple-ajax-modal"><i class="fas fa-pencil-alt"></i></a>  ' +
-                                '<a href="#modalEliminar" data-nasg ="'+row.name+'" data-urldestroy = "' + inf.data('url') + '/campain/points/' + data +'" class="on-default remove-row modal-basic " >' +
+                            return '<a href="' + inf.data('url') + "/campain/points/" + data + '/edit"' + ' class="on-default edit-row simple-ajax-modal"><i class="fas fa-pencil-alt"></i></a>' +
+                                '<a href="' + inf.data('url') + "/campain/points/" + data + '"' + ' class="on-default show-row ml-1 "><i class="fas fa-eye"></i></a>  ' +
+                                '<a href="#modalEliminar" data-nasg ="'+row.name+'" data-urldestroy = "' + inf.data('url') + '/campain/points/' + data +'" class="on-default ml-1 remove-row modal-basic " >' +
                                 '<i class="far fa-trash-alt"></i>' +
                                 '</a>';
                         },

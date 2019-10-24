@@ -69,23 +69,55 @@
                     <span>Mensajes</span>
                 </a>
             </li>
-            <li>
-                <a class="nav-link" href="{{route('candidates.index')}}">
-                    <i class="fas fa-user-shield" aria-hidden="true"></i>
-                    <span>Candidatos</span>
-                </a>
-            </li>
         </ul>
         <a class="nav-link" href="{{route('config')}}">
             <i class="fas fa-tools" aria-hidden="true"></i>
             <span>Configuración</span>
         </a>
     </li>
+    <li class="nav-parent {{ request()->is('/campain') ? 'nav-active' : '' }}">
+        <a class="nav-link" href="#">
+            <i class="fas fa-vote-yea" aria-hidden="true"></i>
+            <span>Votación</span>
+        </a>
+        <ul class="nav nav-children">
+            <li>
+                <a class="nav-link" href="{{route('votations.index')}}">
+                    <i class="fas fa-address-card" aria-hidden="true"></i>
+                    <span>Escrutinios</span>
+                </a>
+            </li>
+            <li>
+                <a class="nav-link" href="{{route('candidates.index')}}">
+                    <i class="fas fa-user-shield" aria-hidden="true"></i>
+                    <span>Candidatos</span>
+                </a>
+            </li>
+            <li>
+                <a class="nav-link" href="{{route('message.index')}}">
+                    <i class="fas fa-file-invoice" aria-hidden="true"></i>
+                    <span>E-14</span>
+                </a>
+            </li>
+            <li>
+                <a class="nav-link" href="{{route('candidates.index')}}">
+                    <i class="fas fa-people-carry" aria-hidden="true"></i>
+                    <span>Seguimiento</span>
+                </a>
+            </li>
+            <li>
+                <a class="nav-link" href="{{route('candidates.index')}}">
+                    <i class="fas fa-power-off" aria-hidden="true"></i>
+                    <span>Reiniciar</span>
+                </a>
+            </li>
+        </ul>
+    </li>
     @endadmin
     <li>
             <a class="nav-link {{ request()->is('/marcado') ? 'nav-active' : '' }}" href="{{route('marcado')}}">
                 <i class="fas fa-check" aria-hidden="true"></i>
-                <span>Votación</span>
+                <span>Marcado</span>
             </a>
-        </li>
+    </li>
 </ul>

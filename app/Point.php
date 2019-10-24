@@ -33,7 +33,9 @@ class Point extends Model
     public function voters(){
         return $this->hasMany(Votantes::class);
     }
-
+    public function tables(){
+        return $this->hasMany(Table::class);
+    }
     public function getCountVotersAttribute(){
         return count($this->voters);
     }

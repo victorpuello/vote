@@ -3,6 +3,7 @@
 @section('namePage', "Candidatos")
 @section('styles')
     @include('partials.stilosdt')
+{{--<link rel="stylesheet" href="{{asset('css/app.css')}}" />--}}
 @endsection
 @section('content')
     {!! Alert::render() !!}
@@ -34,6 +35,7 @@
 @endsection
 @section('scriptfin')
     <script src="{{asset('js/examples/examples.modals.js')}}"></script>
+{{--    <script src="{{asset('js/app.js')}}"></script>--}}
     <script src="{{asset('js/examples/examples.notifications.js')}}"></script>
     <script src="{{asset('js/tablas/candidates.js')}}"></script>
 @endsection

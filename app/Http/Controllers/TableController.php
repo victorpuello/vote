@@ -2,8 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\CreateTableRequest;
+use App\Http\Requests\UpdateTableRequest;
+use App\Point;
 use App\Table;
 use Illuminate\Http\Request;
+use Styde\Html\Facades\Alert;
 
 class TableController extends Controller
 {
@@ -24,7 +28,8 @@ class TableController extends Controller
      */
     public function create()
     {
-        //
+        $points = Point::pluck('name','id');
+        return view('admin.tables.ajax.create',compact('points'));
     }
 
     /**
@@ -33,9 +38,11 @@ class TableController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(CreateTableRequest $request)
     {
-        //
+        Table::create($request->all());
+        Alert::message('Mesa creada con exito','success');
+        return redirect()->back();
     }
 
     /**
@@ -57,7 +64,8 @@ class TableController extends Controller
      */
     public function edit(Table $table)
     {
-        //
+        $points = Point::pluck('name','id');
+        return view('admin.tables.ajax.edit',compact('table','points'));
     }
 
     /**
@@ -67,9 +75,11 @@ class TableController extends Controller
      * @param  \App\Table  $table
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Table $table)
+    public function update(UpdateTableRequest $request, Table $table)
     {
-        //
+        $table->update($request->all());
+        Alert::message('Mesa actualizada con exito','success');
+        return redirect()->back();
     }
 
     /**
@@ -80,6 +90,8 @@ class TableController extends Controller
      */
     public function destroy(Table $table)
     {
-        //
+        $table->delete();
+        Alert::message('Mesa eliminada con exito','warning');
+        return redirect()->back();
     }
 }

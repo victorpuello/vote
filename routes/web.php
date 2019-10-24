@@ -18,8 +18,15 @@ Route::put('voters/sufragar/{voter}', 'VoterController@sufragar')->name('voter.s
 
 Route::group(['prefix'=>'campain'],function (){
     Route::resource('points','PointController');
+    Route::resource('tables','TableController');
     Route::resource('sectors','SectorController');
     Route::resource('message','MessageController');
+});
+Route::group(['prefix'=>'votation'],function (){
+    Route::get('votations/getFiltro','VotationController@getFiltro')->name('votations.getfiltro');
+    Route::resource('votations','VotationController');
+//    Route::resource('sectors','SectorController');
+//    Route::resource('message','MessageController');
 });
 
 Route::get('/reports','ReporterController@index')->name('reports.index');

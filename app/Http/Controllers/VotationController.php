@@ -2,8 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Candidate;
+use App\Http\Requests\CreateVotationRequest;
+use App\Http\Requests\FilterPointRequest;
+use App\Http\Requests\UpdateVotationRequest;
+use App\Point;
+use App\Table;
 use App\Votation;
 use Illuminate\Http\Request;
+use PHPUnit\Util\Filter;
+use Styde\Html\Facades\Alert;
 
 class VotationController extends Controller
 {
@@ -14,17 +22,19 @@ class VotationController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.votations.index');
     }
 
+
     /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
+     * @param FilterPointRequest $request
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function create()
+    public function create(FilterPointRequest $request)
     {
-        //
+        $tables = Table::where('point_id','=',$request->point_id)->pluck('number','id');
+        $candidates = Candidate::pluck('name','id');
+        return view('admin.votations.create',compact('tables','candidates'));
     }
 
     /**
@@ -33,9 +43,11 @@ class VotationController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(CreateVotationRequest $request)
     {
-        //
+        Votation::create($request->all());
+        Alert::message('Votación Guardada con exito','success');
+        return redirect()->route('votations.index');
     }
 
     /**
@@ -57,7 +69,9 @@ class VotationController extends Controller
      */
     public function edit(Votation $votation)
     {
-        //
+        $tables = Table::where('point_id','=',$votation->table->point->id)->pluck('number','id');
+        $candidates = Candidate::pluck('name','id');
+        return view('admin.votations.edit', compact('votation','tables','candidates'));
     }
 
     /**
@@ -67,9 +81,11 @@ class VotationController extends Controller
      * @param  \App\Votation  $votation
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Votation $votation)
+    public function update(UpdateVotationRequest $request, Votation $votation)
     {
-        //
+        $votation->update($request->all());
+        Alert::message('Votación Actualizada con exito','success');
+        return redirect()->route('votations.index');
     }
 
     /**
@@ -80,6 +96,13 @@ class VotationController extends Controller
      */
     public function destroy(Votation $votation)
     {
-        //
+        $votation->delete();
+        Alert::message('Votación eliminada con exito','success');
+        return redirect()->route('votations.index');
+    }
+
+    public function getFiltro(){
+        $points = Point::pluck('name','id');
+        return view('admin.votations.ajax.filter',compact('points'));
     }
 }
