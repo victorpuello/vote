@@ -168,6 +168,7 @@ namespace App{
  * @mixin \Eloquent
  * @property-read mixed $count_voters
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Voter[] $voters
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Table[] $tables
  */
 	class Point extends \Eloquent {}
 }
@@ -254,6 +255,7 @@ namespace App{
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Candidate whereName($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Candidate whereUpdatedAt($value)
  * @mixin \Eloquent
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Candidate dataTableQuery($column = 'id', $orderBy = 'asc', $searchValue = '')
  */
 	class Candidate extends \Eloquent {}
 }
@@ -279,6 +281,8 @@ namespace App{
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Table wherePointId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Table whereUpdatedAt($value)
  * @mixin \Eloquent
+ * @property-read \App\E14 $E14
+ * @property-read \App\Point $point
  */
 	class Table extends \Eloquent {}
 }

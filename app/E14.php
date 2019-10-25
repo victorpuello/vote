@@ -2,7 +2,9 @@
 
 namespace App;
 
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Input;
 
 /**
  * App\E14
@@ -25,18 +27,25 @@ use Illuminate\Database\Eloquent\Model;
  */
 class E14 extends Model
 {
+    protected $table = 'e14_s';
     protected $fillable = [
         'table_id','path'
     ];
     public function table(){
-        return $this->hasOne(Table::class);
+        return $this->belongsTo(Table::class);
     }
     public function setPathAttribute($path)
     {
         if (!empty($path)) {
+            $image = \Image::make(Input::file('path'))->orientate()->encode('jpg',100);
+            $image->resize(350,null,function ($constraint){
+                $constraint->aspectRatio();
+                $constraint->upsize();
+            });
             $name = Carbon::now()->second.$path->getClientOriginalName();
             $this->attributes['path'] = $name;
-            \Storage::disk('local')->put($name,\File::get($path));
+            \Storage::disk('local')->put($name,$image);
         }
     }
+
 }

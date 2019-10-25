@@ -94,7 +94,7 @@
                 </a>
             </li>
             <li>
-                <a class="nav-link" href="{{route('message.index')}}">
+                <a class="nav-link" href="{{route('e14.index')}}">
                     <i class="fas fa-file-invoice" aria-hidden="true"></i>
                     <span>E-14</span>
                 </a>

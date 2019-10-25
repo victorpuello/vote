@@ -3,9 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\E14;
+use App\Http\Requests\CreateE14Request;
+use App\Http\Requests\FilterPointRequest;
+use App\Http\Requests\UpdateE14Request;
 use App\Point;
 use App\Table;
 use Illuminate\Http\Request;
+use Styde\Html\Facades\Alert;
 
 class E14Controller extends Controller
 {
@@ -26,11 +30,10 @@ class E14Controller extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(FilterPointRequest $request)
     {
-        $tables = Table::pluck('name','id');
-        
-        return view('admin.formato.ajax.create',compact('tables'));
+        $tables = Table::where('point_id','=',$request->point_id)->pluck('number','id');
+        return view('admin.formato.create',compact('tables'));
     }
 
     /**
@@ -39,9 +42,11 @@ class E14Controller extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(CreateE14Request $request)
     {
-        //
+        E14::create($request->all());
+        Alert::message('E14 creado con exito','success');
+        return redirect()->route('e14.index');
     }
 
     /**
@@ -63,7 +68,8 @@ class E14Controller extends Controller
      */
     public function edit(E14 $e14)
     {
-        //
+        $tables = Table::where('point_id','=',$e14->table->point->id)->pluck('number','id');
+        return view('admin.formato.ajax.edit',compact('tables','e14'));
     }
 
     /**
@@ -73,9 +79,11 @@ class E14Controller extends Controller
      * @param  \App\E14  $e14
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, E14 $e14)
+    public function update(UpdateE14Request $request, E14 $e14)
     {
-        //
+        $e14->update($request->all());
+        Alert::message('E14 actualizado con exito','success');
+        return redirect()->route('e14.index');
     }
 
     /**
@@ -86,6 +94,12 @@ class E14Controller extends Controller
      */
     public function destroy(E14 $e14)
     {
-        //
+        $e14->delete();
+        Alert::message('E14 Eliminado con exito','warning');
+        return redirect()->route('e14.index');
+    }
+    public function getFiltro(){
+        $points = Point::pluck('name','id');
+        return view('admin.formato.ajax.filter',compact('points'));
     }
 }

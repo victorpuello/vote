@@ -34,7 +34,7 @@ class Table extends Model
 
     public function E14()
     {
-        return $this->belongsTo(E14::class);
+        return $this->hasOne(E14::class);
     }
 
     public function votation()

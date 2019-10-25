@@ -2,106 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2012f37-4c2f-4cf2-900d-26e0157fe035" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/API/VotationsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/varios.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/tablas/votations.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/Candidates.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/Modal.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/ModalButton.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/points/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/votations/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vote.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vote.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.phpstorm.meta.php" beforeDir="false" afterPath="$PROJECT_DIR$/.phpstorm.meta.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_ide_helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/_ide_helper.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_ide_helper_models.php" beforeDir="false" afterPath="$PROJECT_DIR$/_ide_helper_models.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Candidate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Candidate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/CandidateController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/CandidateController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PointController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PointController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TableController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TableController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/VotationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/VotationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Point.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Point.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/E14.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/E14.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/E14Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/E14Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/E14Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/E14Controller.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Table.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/tablas/points.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/tablas/points.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/App.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/components/core/Drawer.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/components/core/Filter.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/components/core/Footer.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/components/core/Toolbar.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/components/core/View.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/components/helper/Offset.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/components/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/components/material/Card.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/components/material/ChartCard.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/components/material/Notification.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/components/material/StatsCard.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/i18n/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/lang/en/Common.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/lang/en/Core/Footer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/lang/en/Core/Toolbar.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/lang/en/Home.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/lang/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/plugins/axios.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/plugins/chartist.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/plugins/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/plugins/theme.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/plugins/vuetify.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/router/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/router/paths.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/store/actions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/store/getters.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/store/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/store/modules/app/mutations.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/store/modules/app/state.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/store/modules/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/store/mutations.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/store/state.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/styles/index.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/styles/material-dashboard/_alerts.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/styles/material-dashboard/_buttons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/styles/material-dashboard/_cards.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/styles/material-dashboard/_checkboxes.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/styles/material-dashboard/_colors.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/styles/material-dashboard/_dropdown.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/styles/material-dashboard/_fixed-plugin.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/styles/material-dashboard/_footer.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/styles/material-dashboard/_inputs.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/styles/material-dashboard/_misc.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/styles/material-dashboard/_mixins.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/styles/material-dashboard/_sidebar.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/styles/material-dashboard/_tables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/styles/material-dashboard/_tabs.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/styles/material-dashboard/_toolbar.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/styles/material-dashboard/_tooltips.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/styles/material-dashboard/_typography.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/styles/material-dashboard/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/utils/vuex.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/views/Dashboard.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/views/Icons.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/views/Maps.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/views/Notifications.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/views/TableList.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/views/Typography.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/views/Upgrade.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/views/UserProfile.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/candidates/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/candidates/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/sectors/ajax/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/sectors/ajax/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/app.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/tablas/e14.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/tablas/e14.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/formato/ajax/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/formato/ajax/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/formato/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/formato/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/formato/partials/fields.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/formato/partials/fields.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/formato/partials/modals.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/formato/partials/modals.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/menus/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/menus/admin.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/worker.log" beforeDir="false" afterPath="$PROJECT_DIR$/worker.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -239,6 +160,10 @@
       <path value="$PROJECT_DIR$/vendor/maximebf/debugbar" />
       <path value="$PROJECT_DIR$/vendor/twilio/sdk" />
       <path value="$PROJECT_DIR$/vendor/jamesdordoy/laravelvuedatatable" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/intervention/image" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
     </include_path>
   </component>
   <component name="ProjectId" id="1OtjywIwOaRjhwjsNtTjNqLdyaS" />
@@ -326,7 +251,8 @@
       <workItem from="1571458540508" duration="7063000" />
       <workItem from="1571786250982" duration="9062000" />
       <workItem from="1571802103618" duration="6010000" />
-      <workItem from="1571924101095" duration="20351000" />
+      <workItem from="1571924101095" duration="21421000" />
+      <workItem from="1571958851424" duration="13962000" />
     </task>
     <servers />
   </component>

@@ -19,13 +19,21 @@
                 columns: [
                     {data: null, defaultContent: '', className: 'control', orderable: false, searchable: false },
                     {data: "id", name: "id", className: 'never', orderable: false, visible: false, searchable: false},
-                    { data: "puesto", name:"puesto",orderable: true, searchable: true },
-                    { data: "mesa", name:"mesa",orderable: true, searchable: true },
-                    { data: "patch", name:"patch",orderable: true, searchable: true },
+                    { data: "table.point.name", name:"puesto",orderable: true, searchable: true },
+                    { data: "table.number", name:"mesa",orderable: true, searchable: true },
+                    {
+                        // name:"path",
+                        data:"path",
+                        render: function (data) {
+                            return  '<a href="'+inf.data('url')+'/storage/'+data+'" data-plugin-lightbox data-plugin-options="{ \'type\'\:\'\image\'\ }" title="Caption"><img class="img-fluid" src="'+inf.data('url')+'/storage/'+data+'" width="145"></a>';
+                        },
+                        orderable: true,
+                        searchable: true
+                    },
                     {
                         data: "id", render: function (data, type, row) {
-                            return '<a href="' + inf.data('url') + "/candidates/" + data + '/edit"' + ' class="on-default edit-row simple-ajax-modal"><i class="fas fa-pencil-alt"></i></a>  ' +
-                                '<a href="#modalEliminar" data-nasg ="'+row.name+'" data-urldestroy = "' + inf.data('url') + '/candidates/' + data +'" class="on-default remove-row modal-basic " >' +
+                            return '<a href="' + inf.data('url') + "/votation/e14/" + data + '/edit"' + ' class="on-default edit-row simple-ajax-modal"><i class="fas fa-pencil-alt"></i></a>  ' +
+                                '<a href="#modalEliminar" data-nasg ="'+row.name+'" data-urldestroy = "' + inf.data('url') + '/votation/e14/' + data +'" class="on-default remove-row modal-basic " >' +
                                 '<i class="far fa-trash-alt"></i>' +
                                 '</a>';
                         },
@@ -72,6 +80,15 @@
                     preloader: false,
                     modal: true
                 });
+            });
+            $('.image-popup-vertical-fit').magnificPopup({
+                type: 'image',
+                closeOnContentClick: true,
+                mainClass: 'mfp-img-mobile',
+                image: {
+                    verticalFit: true
+                }
+
             });
         }
     );

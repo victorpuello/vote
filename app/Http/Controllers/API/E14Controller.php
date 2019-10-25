@@ -15,7 +15,7 @@ class E14Controller extends Controller
      */
     public function index()
     {
-        return datatables()->eloquent(E14::query())->toJson();
+        return datatables()->eloquent(E14::with('table.point'))->toJson();
     }
 
     /**

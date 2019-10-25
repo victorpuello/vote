@@ -10,7 +10,7 @@ Route::post('search','SearchController')->name('search');
 
 Route::resource('leaders','LeaderController');
 Route::resource('candidates','CandidateController');
-Route::resource('e14','E14Controller');
+
 
 Route::resource('voters','VoterController')->except('show');
 Route::get('voters/{id}','VoterController@show')->name('voter.show');
@@ -24,7 +24,9 @@ Route::group(['prefix'=>'campain'],function (){
 });
 Route::group(['prefix'=>'votation'],function (){
     Route::get('votations/getFiltro','VotationController@getFiltro')->name('votations.getfiltro');
+    Route::get('e14/getFiltro','E14Controller@getFiltro')->name('e14.getfiltro');
     Route::resource('votations','VotationController');
+    Route::resource('e14','E14Controller');
 //    Route::resource('sectors','SectorController');
 //    Route::resource('message','MessageController');
 });
