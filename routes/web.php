@@ -25,10 +25,13 @@ Route::group(['prefix'=>'campain'],function (){
 Route::group(['prefix'=>'votation'],function (){
     Route::get('votations/getFiltro','VotationController@getFiltro')->name('votations.getfiltro');
     Route::get('e14/getFiltro','E14Controller@getFiltro')->name('e14.getfiltro');
+    Route::get('tacking','TrackingController@index')->name('tracking.index');
+    Route::get('tacking/leaders','TrackingController@leaders')->name('tracking.leaders');
+    Route::get('tacking/leaders/sendNotification/{leader}','TrackingController@sendNotification')->name('tracking.leaders.notification');
+    Route::get('tacking/leaders/sendNotifications/','TrackingController@sendAllNotification')->name('tracking.leaders.notifications');
+    Route::get('tacking/reset','TrackingController@reset')->name('tracking.counts.reset');
     Route::resource('votations','VotationController');
     Route::resource('e14','E14Controller');
-//    Route::resource('sectors','SectorController');
-//    Route::resource('message','MessageController');
 });
 
 Route::get('/reports','ReporterController@index')->name('reports.index');

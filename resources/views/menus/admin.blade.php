@@ -100,13 +100,13 @@
                 </a>
             </li>
             <li>
-                <a class="nav-link" href="{{route('candidates.index')}}">
+                <a class="nav-link" href="{{route('tracking.index')}}">
                     <i class="fas fa-people-carry" aria-hidden="true"></i>
                     <span>Seguimiento</span>
                 </a>
             </li>
             <li>
-                <a class="nav-link" href="{{route('candidates.index')}}">
+                <a class="nav-link on-default modal-basic" href="#modalReset">
                     <i class="fas fa-power-off" aria-hidden="true"></i>
                     <span>Reiniciar</span>
                 </a>

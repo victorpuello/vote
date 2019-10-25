@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Candidate;
+use App\Clases\LeaderOperations;
 use App\Http\Requests\CreateCandidateRequest;
 use App\Http\Requests\UpdateCandidateRequest;
 use Illuminate\Http\Request;

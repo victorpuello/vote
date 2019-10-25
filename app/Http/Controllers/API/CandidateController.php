@@ -3,9 +3,11 @@
 namespace App\Http\Controllers\API;
 
 use App\Candidate;
+use App\Clases\LeaderOperations;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use JamesDordoy\LaravelVueDatatable\Http\Resources\DataTableCollectionResource;
+use PhpParser\Node\Expr\New_;
 
 class CandidateController extends Controller
 {
@@ -27,7 +29,6 @@ class CandidateController extends Controller
 //        return new DataTableCollectionResource($data);
         return datatables()->eloquent(Candidate::query())->toJson();
     }
-
     /**
      * Store a newly created resource in storage.
      *

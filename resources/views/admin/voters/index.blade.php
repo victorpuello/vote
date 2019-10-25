@@ -46,7 +46,6 @@
     @include('partials.scriptdt')
 @endsection
 @section('scriptfin')
-    <script src="{{asset('js/examples/examples.modals.js')}}"></script>
     <script src="{{asset('js/examples/examples.notifications.js')}}"></script>
     <script src="{{asset('js/examples/examples.datatables.tabletools.js')}}"></script>
 {{--    <script src="{{asset('js/tablas/voters.js')}}"></script>--}}
