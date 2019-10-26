@@ -37,17 +37,16 @@ class HomeController extends Controller
         $leaders = Leader::withCount('voters')->orderByDesc('voters_count')->take(10)->get();
         $leaders->load('sector');
         $saldo = (new SMS('3215496008','hola','wellcome'))->saldo();
-        //dd($saldo);
         $sectors = Sector::withCount('voters')->orderByDesc('voters_count')->take(10)->get();
         switch (currentPerfil()){
             case 'auxiliar':
-                return view('home',compact('nLeaders','nSectors','nUsers','nVoters','leaders','sectors','saldo'));
+                return view('auxiliar.voters.index');
             case 'admin':
                 return view('home',compact('nLeaders','nSectors','nUsers','nVoters','leaders','sectors','saldo'));
                 break;
             default:break;
         }
-    }
+    }   
 
     private function getporcentaje($voters_count,$nvoters)
     {

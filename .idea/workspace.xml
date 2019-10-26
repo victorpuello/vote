@@ -2,34 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2012f37-4c2f-4cf2-900d-26e0157fe035" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Clases/LeaderOperations.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/tablas/trackingleaders.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/tracking/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/tracking/leaders.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/partials/resetModal.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/front/home.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/front/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/front/layout.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Helpers/VariosHelpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Helpers/VariosHelpers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/CandidateController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/CandidateController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CandidateController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CandidateController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/CandidateResource.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/E14Resource.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/Leader.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/Leaders.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/Message.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/Point.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/Points.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/Sector.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/Sectors.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/TableResource.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/User.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/Users.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/VotationResource.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/Voter.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/Voters.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/voters/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/voters/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Table.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/menus/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/menus/admin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/worker.log" beforeDir="false" afterPath="$PROJECT_DIR$/worker.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -258,7 +240,8 @@
       <workItem from="1571786250982" duration="9062000" />
       <workItem from="1571802103618" duration="6010000" />
       <workItem from="1571924101095" duration="21421000" />
-      <workItem from="1571958851424" duration="27623000" />
+      <workItem from="1571958851424" duration="28225000" />
+      <workItem from="1572059278419" duration="17647000" />
     </task>
     <servers />
   </component>

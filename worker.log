@@ -25183,3 +25183,2579 @@
       /var/www/vote/vendor/laravel/framework/src/Illuminate/Queue/QueueManager.php:138
 
   Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+  Exception trace:
+
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+  Exception trace:
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.
+
+   UnexpectedValueException  : The stream or file "/var/www/vote/storage/logs/laravel-2019-10-25.log" could not be opened: failed to open stream: Permission denied
+
+  at /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+    103|             }
+    104|             restore_error_handler();
+    105|             if (!is_resource($this->stream)) {
+    106|                 $this->stream = null;
+  > 107|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    108|             }
+    109|         }
+    110| 
+    111|         if ($this->useLocking) {
+
+  Exception trace:
+
+  1   Monolog\Handler\StreamHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:119
+
+  2   Monolog\Handler\RotatingFileHandler::write()
+      /var/www/vote/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+
+  Please use the argument -v to see more details.

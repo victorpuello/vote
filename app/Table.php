@@ -28,6 +28,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  */
 class Table extends Model
 {
+    protected $with = ['point'];
     protected $fillable = [
         'point_id','number','nvoters'
     ];
@@ -43,5 +44,11 @@ class Table extends Model
     }
     public function  point(){
         return $this->belongsTo(Point::class);
+    }
+    public function getFullNameAttribute(){
+        return $this->point->name .' - Mesa: '.$this->number;
+    }
+    public function asignacion(){
+        return $this->hasOne(Asignacion::class);
     }
 }

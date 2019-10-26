@@ -1,9 +1,10 @@
 <?php
 Route::get('/', function () {
-    return view('auth.login');
+    return view('front.home');
 });
 
 Auth::routes();
+Route::get('validar', 'TestigoController@ValidateTestigo')->name('validar.testigo');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('users','UserController');
 Route::post('search','SearchController')->name('search');
@@ -24,6 +25,7 @@ Route::group(['prefix'=>'campain'],function (){
 });
 Route::group(['prefix'=>'votation'],function (){
     Route::get('votations/getFiltro','VotationController@getFiltro')->name('votations.getfiltro');
+    Route::get('asignacions/create/{id}','AsignacionController@create')->name('asignacions.create');
     Route::get('e14/getFiltro','E14Controller@getFiltro')->name('e14.getfiltro');
     Route::get('tacking','TrackingController@index')->name('tracking.index');
     Route::get('tacking/leaders','TrackingController@leaders')->name('tracking.leaders');
@@ -32,6 +34,8 @@ Route::group(['prefix'=>'votation'],function (){
     Route::get('tacking/reset','TrackingController@reset')->name('tracking.counts.reset');
     Route::resource('votations','VotationController');
     Route::resource('e14','E14Controller');
+    Route::resource('testigos','TestigoController');
+    Route::resource('asignacions','AsignacionController')->except('create');
 });
 
 Route::get('/reports','ReporterController@index')->name('reports.index');

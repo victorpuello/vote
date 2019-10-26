@@ -88,6 +88,12 @@
                 </a>
             </li>
             <li>
+                <a class="nav-link" href="{{route('testigos.index')}}">
+                    <i class="fas fa-user-tie" aria-hidden="true"></i>
+                    <span>Testigos</span>
+                </a>
+            </li>
+            <li>
                 <a class="nav-link" href="{{route('candidates.index')}}">
                     <i class="fas fa-user-shield" aria-hidden="true"></i>
                     <span>Candidatos</span>
