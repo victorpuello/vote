@@ -32,7 +32,7 @@ class VotationController extends Controller
      */
     public function create(FilterPointRequest $request)
     {
-        $tables = Table::where('point_id','=',$request->point_id)->pluck('number','id');
+        $tables = Table::doesntHave('votation')->where('point_id','=',$request->point_id)->pluck('number','id');
         $candidates = Candidate::pluck('name','id');
         return view('admin.votations.create',compact('tables','candidates'));
     }

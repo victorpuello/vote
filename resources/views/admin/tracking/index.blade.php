@@ -20,7 +20,7 @@
                             <div class="summary" style="min-height: 48px;">
                                 <h2 class="title">Votos Registrados</h2>
                                 <div class="info mt-3">
-                                    <strong style="font-size: 58px;" class="timer amount tex count-title count-number" data-to="{{$nVotes}}"
+                                    <strong style="font-size: 38px;" class="timer amount tex count-title count-number" data-to="{{$nVotes}}"
                                             data-speed="3500"></strong>
                                 </div>
                             </div>
@@ -43,7 +43,7 @@
                             <div class="summary" style="min-height: 48px;">
                                 <h4 class="title">E-14 Cargados</h4>
                                 <div class="info mt-3">
-                                    <strong style="font-size: 58px;" class="timer amount count-title count-number" data-to="{{$nE14}}"
+                                    <strong style="font-size: 38px;" class="timer amount count-title count-number" data-to="{{$nE14}}"
                                             data-speed="3500"></strong>
                                 </div>
                             </div>
@@ -64,9 +64,9 @@
                         </div>
                         <div class="widget-summary-col mt-3">
                             <div class="summary" style="min-height: 48px;">
-                                <h4 class="title">Votos Confirmados</h4>
+                                <h4 class="title">Confirmados</h4>
                                 <div class="info mt-3">
-                                    <strong style="font-size: 58px;" class="timer amount count-title count-number" data-to="{{$count}}"
+                                    <strong style="font-size: 38px;" class="timer amount count-title count-number" data-to="{{$count}}"
                                             data-speed="3500"></strong>
                                 </div>
                             </div>
@@ -89,7 +89,7 @@
                             <div class="summary" style="min-height: 48px;">
                                 <h4 class="title">Votos faltantes</h4>
                                 <div class="info mt-3">
-                                    <strong  style="font-size: 58px;" class="timer amount count-title count-number" data-to="{{$faltantes}}"
+                                    <strong  style="font-size: 38px;" class="timer amount count-title count-number" data-to="{{$faltantes}}"
                                             data-speed="3500"></strong>
                                 </div>
                             </div>
