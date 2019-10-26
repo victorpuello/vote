@@ -41,7 +41,7 @@ class UserController extends Controller
     {
         $user = User::create($request->all());
         Alert::message('Usuario: '.$user->username.', Guardado con exito','success');
-        return redirect()->route('users.index');;
+        return redirect()->route('users.index');
     }
 
     /**

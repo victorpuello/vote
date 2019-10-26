@@ -1,6 +1,6 @@
 <?php
 Route::get('/', function () {
-    return view('front.home');
+    return view('auth.login');
 });
 
 Auth::routes();
@@ -11,7 +11,6 @@ Route::post('search','SearchController')->name('search');
 
 Route::resource('leaders','LeaderController');
 Route::resource('candidates','CandidateController');
-
 
 Route::resource('voters','VoterController')->except('show');
 Route::get('voters/{id}','VoterController@show')->name('voter.show');
