@@ -26,8 +26,8 @@ class LeaderOperations
                 $query->where('sufrago','=',0);
             },
         ])->with('sector');
-        $this->bad = $this->leaders->orderByDesc('pending_sufragio_count')->get();
-        $this->best = $this->leaders->orderByDesc('sufragio_count')->get()->take(10);
+        $this->best = $this->leaders->orderByDesc('sufragio_count')->get();
+    //    dd($this->leaders->orderByDesc('pending_sufragio_count')->get());
     }
 
     /**
@@ -42,7 +42,15 @@ class LeaderOperations
      * @return Builder[]|\Illuminate\Database\Eloquent\Collection
      */
     public function badLeaders(){
-        return $this->bad->take(10);
+       return Leader::withCount([
+            'voters',
+            'voters as sufragio_count' => function(Builder $query){
+                $query->where('sufrago','=',1);
+            },
+            'voters as pending_sufragio_count' => function(Builder $query){
+                $query->where('sufrago','=',0);
+            },
+        ])->with('sector')->orderByDesc('pending_sufragio_count')->get()->take(10);
     }
 
     public function allLeaders(){

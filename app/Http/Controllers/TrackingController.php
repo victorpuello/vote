@@ -23,6 +23,7 @@ class TrackingController extends Controller
         $count =0;
         $operationLeader = New LeaderOperations();
         $bestLeaders = $operationLeader->bestLeaders();
+
         $badLeaders = $operationLeader->badLeaders();
         $faltantes = Voter::count() - $nVotes;
         foreach ($votations as $votation){
@@ -45,6 +46,10 @@ class TrackingController extends Controller
         $sms->sendSms();
         Alert::message('Mensaje enviado con exito','success');
         return redirect()->back();
+    }
+    public function leadersfaltantes(Leader $leader){
+        $voters = $leader->voters->where('sufrago','=',0);
+        return view('admin.tracking.faltantes',compact('voters','leader'));
     }
 
     public function sendAllNotification(){

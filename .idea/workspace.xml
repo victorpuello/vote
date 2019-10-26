@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2012f37-4c2f-4cf2-900d-26e0157fe035" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/VotationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/VotationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/tracking/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/tracking/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Clases/LeaderOperations.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Clases/LeaderOperations.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TrackingController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TrackingController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/tracking/leaders.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/tracking/leaders.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,24 +26,24 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="php" value="18" />
+          <entry key="php" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Blade" value="4" />
-          <entry key="PHP" value="14" />
+          <entry key="Blade" value="8" />
+          <entry key="PHP" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="php" value="53" />
+          <entry key="php" value="512" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Blade" value="12" />
-          <entry key="PHP" value="41" />
+          <entry key="Blade" value="290" />
+          <entry key="PHP" value="222" />
         </counts>
       </usages-collector>
     </session>
@@ -49,99 +51,37 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/admin/users/ajax/create.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/tracking/leaders.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+            <state relative-caret-position="292">
+              <caret line="41" column="68" selection-start-line="41" selection-start-column="59" selection-end-line="41" selection-end-column="68" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Testigo.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/User.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TrackingController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
-              <folding>
-                <element signature="e#23#63#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/VoterController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="61" selection-start-line="61" selection-end-line="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/VotationController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="471">
-              <caret line="40" column="49" selection-start-line="40" selection-start-column="49" selection-end-line="40" selection-end-column="49" />
+            <state relative-caret-position="414">
+              <caret line="51" column="71" selection-start-line="51" selection-start-column="71" selection-end-line="51" selection-end-column="71" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/admin/tracking/index.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/tracking/faltantes.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="66" column="50" selection-start-line="66" selection-start-column="50" selection-end-line="66" selection-end-column="50" />
-              <folding>
-                <element signature="e#1210#1234#0#HTML" expanded="true" />
-                <element signature="e#2503#2527#0#HTML" expanded="true" />
-                <element signature="e#3782#3806#0#HTML" expanded="true" />
-                <element signature="e#5070#5094#0#HTML" expanded="true" />
-              </folding>
+            <state relative-caret-position="184">
+              <caret line="8" column="99" selection-start-line="8" selection-start-column="99" selection-end-line="8" selection-end-column="99" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Table.php">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="40" column="28" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AsignacionController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="39" column="7" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="39" column="35" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
-              <folding>
-                <element signature="e#40#80#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Requests/CreateUserRequest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="43" column="23" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+            <state relative-caret-position="241">
+              <caret line="30" column="88" selection-start-line="30" selection-start-column="72" selection-end-line="30" selection-end-column="88" />
             </state>
           </provider>
         </entry>
@@ -162,11 +102,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/users/ajax/create.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/VotationController.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/tracking/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/Clases/LeaderOperations.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/tracking/leaders.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/TrackingController.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/tracking/faltantes.blade.php" />
       </list>
     </option>
   </component>
@@ -385,6 +329,14 @@
             <path>
               <item name="vote" type="b2602c69:ProjectViewProjectNode" />
               <item name="vote" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="voters" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vote" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vote" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -396,7 +348,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="web&#9;FILE&#9;file://C:/xampp/htdocs/vote/routes/web.php&#10;api&#9;FILE&#9;file://C:/xampp/htdocs/vote/routes/api.php&#10;candidate&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="tra&#9;FILE&#9;file://C:/xampp/htdocs/vote/app/Http/Controllers/TrackingController.php&#10;web&#9;FILE&#9;file://C:/xampp/htdocs/vote/routes/web.php&#10;api&#9;FILE&#9;file://C:/xampp/htdocs/vote/routes/api.php&#10;candidate&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers/API" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -480,12 +432,12 @@
       <workItem from="1571924101095" duration="21421000" />
       <workItem from="1571958851424" duration="28225000" />
       <workItem from="1572059278419" duration="17647000" />
-      <workItem from="1572111558386" duration="3071000" />
+      <workItem from="1572111558386" duration="6328000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3071000" />
+    <option name="totallyTimeSpent" value="6328000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -560,13 +512,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/users/ajax/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -664,14 +609,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/tracking/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="66" column="50" selection-start-line="66" selection-start-column="50" selection-end-line="66" selection-end-column="50" />
-          <folding>
-            <element signature="e#1210#1234#0#HTML" expanded="true" />
-            <element signature="e#2503#2527#0#HTML" expanded="true" />
-            <element signature="e#3782#3806#0#HTML" expanded="true" />
-            <element signature="e#5070#5094#0#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="494">
+          <caret line="133" column="25" selection-start-line="133" selection-start-column="25" selection-end-line="133" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Clases/LeaderOperations.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="55" column="33" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/voters/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/tracking/leaders.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="41" column="68" selection-start-line="41" selection-start-column="59" selection-end-line="41" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="30" column="88" selection-start-line="30" selection-start-column="72" selection-end-line="30" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TrackingController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="51" column="71" selection-start-line="51" selection-start-column="71" selection-end-line="51" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/tracking/faltantes.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="99" selection-start-line="8" selection-start-column="99" selection-end-line="8" selection-end-column="99" />
         </state>
       </provider>
     </entry>
