@@ -99,7 +99,7 @@
                                 <div class="summary" style="min-height: 48px;">
                                     <h4 class="title">Saldo en $ COP SMS</h4>
                                     <div class="info">
-                                        <strong class="timer amount count-title count-number" data-to="{{$saldo}}"
+                                        <strong class="timer amount count-title count-number" data-to="50000"
                                                 data-speed="3500">$ </strong>
                                     </div>
                                 </div>
