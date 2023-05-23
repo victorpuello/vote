@@ -17,7 +17,7 @@ class LeaderController extends Controller
      */
     public function index()
     {
-        return datatables()->eloquent(Leader::with('sector'))
+        return datatables()->eloquent(Leader::with('sector','candidate'))
             ->addColumn('sector',function (Leader $leader){
                 return $leader->sector->name;
             })->orderColumn('sector', '-sector_id $1')->toJson();

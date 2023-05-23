@@ -24,13 +24,13 @@ class ReporterController extends Controller
     }
     public function votersLeader(Leader $leader){
         $leader->load('voters.sector','voters.point','sector');
-//        return view('admin.print.leaderVotantes',compact('leader'));
-        $pdf = PDF::loadView('admin.print.leaderVotantes', compact('leader'))
+        return view('admin.print.leaderVotantes',compact('leader'));
+        /*$pdf = PDF::loadView('admin.print.leaderVotantes', compact('leader'))
             ->setPaper('legal')
             ->setOrientation('portrait')
             ->setOption('margin-bottom', 15)
             ->setOption('encoding', 'UTF-8');
-        return $pdf->download('Reporte'.$leader->full_name.'.pdf');
+        return $pdf->download('Reporte'.$leader->full_name.'.pdf');*/
     }
 
 }

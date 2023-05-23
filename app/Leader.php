@@ -34,7 +34,7 @@ use Illuminate\Database\Eloquent\Model;
 class Leader extends Model
 {
     protected $fillable = [
-        'cedula', 'name', 'lastname', 'phone', 'sector_id'
+        'cedula', 'name', 'lastname', 'phone', 'sector_id','candidate_id'
     ];
 
     public function sector(){
@@ -54,5 +54,9 @@ class Leader extends Model
     public function setLastnameAttribute($lastname)
     {
         $this->attributes['lastname'] = strtoupper($lastname);
+    }
+
+    public function candidate(){
+        return $this->belongsTo(Candidate::class);
     }
 }

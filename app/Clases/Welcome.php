@@ -71,6 +71,7 @@ class Welcome
     public function createWelcomeMessage()
     {
         $this->message = Message::create([
+            'name'=>"weelcome",
             'message' => "Aquí debes redactar tu mensaje de Bienvenida",
             'type' => "welcome"
         ]);

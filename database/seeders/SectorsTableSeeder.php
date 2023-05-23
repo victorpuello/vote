@@ -1,8 +1,8 @@
 <?php
-
+namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 
-class LeadersTableSeeder extends Seeder
+class SectorsTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,6 +11,6 @@ class LeadersTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(\App\Leader::class,150)->create();
+        factory(\App\Sector::class,22)->create();
     }
 }

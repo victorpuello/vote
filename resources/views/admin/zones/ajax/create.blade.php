@@ -1,11 +1,11 @@
 <div id="modalHeaderColorPrimary" class="modal-block modal-header-color modal-block-primary ">
     <section class="card">
-        {!! Form::open(['route' => 'message.store', 'method' => 'POST','files'=>true,'class' => 'form-horizontal form-bordered']) !!}
+        {!! Form::open(['route' => 'zones.store', 'method' => 'POST','files'=>true,'class' => 'form-horizontal form-bordered']) !!}
         <header class="card-header">
-            <h2 class="card-title">Crear message nuevo </h2>
+            <h2 class="card-title">Crear zona nueva </h2>
         </header>
         <div class="card-body">
-            @include('admin.messages.partials.fields')
+            @include('admin.zones.partials.fields')
         </div>
         <footer class="card-footer">
             <div class="row">

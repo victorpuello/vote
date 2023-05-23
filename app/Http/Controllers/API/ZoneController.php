@@ -2,11 +2,14 @@
 
 namespace App\Http\Controllers\API;
 
-use App\Sector;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\StoreZoneRequest;
+use App\Http\Requests\UpdateZoneRequest;
+use App\Zone;
+use Styde\Html\Facades\Alert;
 
-class SectorController extends Controller
+class ZoneController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,12 +18,8 @@ class SectorController extends Controller
      */
     public function index()
     {
-        return datatables()->eloquent(Sector::with('voters','leaders','zone'))
-            ->addColumn('votantes',function (Sector $sector){
-                return count($sector->voters);
-            })->addColumn('lideres',function (Sector $sector){
-                return count($sector->leaders);
-            })->toJson();
+        $zones = Zone::with('sectors');
+        return datatables()->eloquent($zones)->toJson();
     }
 
     /**
@@ -31,7 +30,7 @@ class SectorController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
     }
 
     /**
@@ -52,7 +51,7 @@ class SectorController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(UpdateZoneRequest $request, $id)
     {
         //
     }

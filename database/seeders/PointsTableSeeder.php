@@ -1,8 +1,8 @@
 <?php
-
+namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 
-class VotersTableSeeder extends Seeder
+class PointsTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,6 +11,6 @@ class VotersTableSeeder extends Seeder
      */
     public function run()
     {
-       factory(\App\Voter::class,3500)->create();
+        factory(\App\Point::class,54)->create();
     }
 }

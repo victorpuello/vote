@@ -43,6 +43,6 @@ class Point extends Model
         $this->attributes['name'] = strtoupper($name);
     }
     public function setAddressAttribute($address){
-        $this->attributes['name'] = strtoupper($address);
+        $this->attributes['address'] = strtoupper($address);
     }
 }

@@ -7,7 +7,7 @@ use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;
 use Styde\Html\Facades\Alert;
 
-class CreateSectorRequest extends FormRequest
+class UpdateZoneRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -27,32 +27,26 @@ class CreateSectorRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => ['required','min:3','string','max:140',Rule::unique('sectors','name')],
-            'zone_id' => ['required',Rule::exists('zones','id')],
+            'name' => ['required','min:3','string','max:140',Rule::unique('points','name')->ignore($this->zone)]
         ];
     }
-    /**
-     * @param Validator $validator
-     * @throws \Illuminate\Validation\ValidationException
-     */
+
     protected function failedValidation(Validator $validator){
-        Alert::message('El sector no fue guardado, se presentaron los siguientes errores:', 'danger')->items($validator->errors());
+        Alert::message('La zona no fue guardada, se presentaron los siguientes errores:', 'danger')->items($validator->errors());
         return parent::failedValidation($validator);
     }
-    /**
-     * @return array
-     */
+
     public function messages()
     {
         return [
             'name.required' => 'El :attribute es obligatorio.',
-            'name.unique' => 'Este nombre ya está en uso'
+            'name.unique' => 'Este nombre ya está en uso',
         ];
     }
     public function attributes()
     {
         return [
-            'name' => 'Nombre'
+            'name' => 'Nombre',
         ];
     }
 }

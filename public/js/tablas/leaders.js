@@ -23,6 +23,7 @@
                     { data: "name", name:"name",orderable: true, searchable: true },
                     { data: "lastname", name:"lastname",orderable: true, searchable: true },
                     { data: "phone", name:"phone",orderable: true, searchable: true },
+                    { data: "candidate.name", name:"candidate",orderable: true, searchable: true },
                     { data: "sector",name:'sector', orderable: false, searchable: true },
                     {
                         data: "id", render: function (data, type, row) {

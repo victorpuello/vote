@@ -39,7 +39,6 @@ class MessageController extends Controller
      */
     public function store(CreateMessageRequest $request)
     {
-        dd('fuck off');
         Message::create($request->all());
         Alert::message('SMS Guardado con exito','success');
         return  redirect()->back();

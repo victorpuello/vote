@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Candidate;
 use App\Http\Requests\CreateLeaderRequest;
 use App\Http\Requests\UpdateLeaderRequest;
 use App\Leader;
@@ -29,7 +30,8 @@ class LeaderController extends Controller
     public function create()
     {
         $sectors = Sector::pluck('name','id');
-        return view('admin.leaders.ajax.create',compact('sectors'));
+        $candidates =  Candidate::pluck('name','id');
+        return view('admin.leaders.ajax.create',compact('sectors','candidates'));
     }
 
     /**
@@ -63,7 +65,8 @@ class LeaderController extends Controller
     public function edit(Leader $leader)
     {
         $sectors = Sector::pluck('name','id');
-        return view('admin.leaders.ajax.edit',compact('sectors','leader'));
+        $candidates =  Candidate::pluck('name','id');
+        return view('admin.leaders.ajax.edit',compact('sectors','leader','candidates'));
     }
 
 

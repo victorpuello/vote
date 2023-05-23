@@ -28,5 +28,13 @@ class Message extends Model
 {
     protected $fillable = ['name','message','type'];
 
-
+    public function setMessageAttribute($message){
+        $this->attributes['message'] = strtoupper($message);
+    }
+    public function setTypeAttribute($type){
+        $this->attributes['type'] = strtoupper($type);
+    }
+    public function setNameAttribute($name){
+        $this->attributes['name'] = strtoupper($name);
+    }
 }

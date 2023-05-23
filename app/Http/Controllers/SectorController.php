@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\CreateSectorRequest;
 use App\Http\Requests\UpdateSectorRequest;
 use App\Sector;
+use App\Zone;
 use Styde\Html\Facades\Alert;
 
 class SectorController extends Controller
@@ -26,7 +27,8 @@ class SectorController extends Controller
      */
     public function create()
     {
-        return view('admin.sectors.ajax.create');
+        $zones = Zone::pluck('name','id');
+        return view('admin.sectors.ajax.create',compact('zones'));
     }
 
     /**
@@ -61,7 +63,8 @@ class SectorController extends Controller
      */
     public function edit(Sector $sector)
     {
-        return view('admin.sectors.ajax.edit',compact('sector'));
+        $zones = Zone::pluck('name','id');
+        return view('admin.sectors.ajax.edit',compact('sector','zones'));
     }
 
     /**

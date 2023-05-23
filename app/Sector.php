@@ -28,7 +28,7 @@ use Illuminate\Database\Eloquent\Model;
 class Sector extends Model
 {
     protected $fillable = [
-        'name'
+        'name','zone_id'
     ];
 
     /**
@@ -48,11 +48,14 @@ class Sector extends Model
     }
     public function getShortNameAttribute(){
         $longitud = strlen($this->attributes['name']);
-//        dd(substr($this->attributes['name'],3,3));
         return substr($this->attributes['name'],3,4);
     }
     public function setNameAttribute($name){
         $this->attributes['name'] = strtoupper($name);
     }
 
+    public function zone(){
+        return $this->belongsTo(Zone::class);
+    }
 }
+

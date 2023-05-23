@@ -26,6 +26,7 @@
                 <th>Nombres</th>
                 <th>Apellidos</th>
                 <th>Telefono</th>
+                <th>Candidato</th>
                 <th>Sector</th>
                 <th>Acciones</th>
             </tr>

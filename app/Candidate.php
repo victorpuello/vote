@@ -43,4 +43,9 @@ class Candidate extends Model
     {
         return $this->hasMany(Votation::class);
     }
+
+    public function leaders(){
+        return $this->hasMany(Leader::class);
+    }
+
 }

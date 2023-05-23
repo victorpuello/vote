@@ -20,10 +20,13 @@ class CreateLeadersTable extends Migration
             $table->string('lastname');
             $table->string('phone');
             $table->unsignedBigInteger('sector_id');
-            $table->foreign('sector_id')->references('id')->on('sectors')->onDelete('cascade');
+            $table->foreign('sector_id')->references('id')->on('candidates')->onDelete('cascade');
+            $table->unsignedBigInteger('candidate_id');
+            $table->foreign('candidate_id')->references('id')->on('candidates')->onDelete('cascade');
             $table->timestamps();
         });
     }
+
 
     /**
      * Reverse the migrations.

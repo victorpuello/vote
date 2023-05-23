@@ -14,7 +14,7 @@
         {!! Form::text('lastname', null, ['class' => 'form-control', 'placeholder' => 'Por favor introduzca los apellidos']) !!}
     </div>
 </div>
-<div class="form-group row">
+<div class="form-group row mb-0 pb-0">
     <div class="col-lg-6">
         {!! Form::label('phone', 'Telefono',['class'=>'col-lg-6 control-label text-lg-left pt-2']) !!}
         {!! Form::text('phone', null, ['class' => 'form-control', 'placeholder' => 'Telefono/Celular']) !!}
@@ -22,5 +22,11 @@
     <div class="col-lg-6">
         {!! Form::label('sector_id', 'Sector',['class'=>'col-lg-12 control-label text-lg-left pt-2']) !!}
         {!! Form::select('sector_id', $sectors,null,['placeholder' =>'Selecciona un sector','class' => 'form-control mb-3', 'id'=>'sector_id','required']) !!}
+    </div>
+</div>
+<div class="form-group row">
+    <div class="col-lg-6">
+        {!! Form::label('candidate_id', 'Candidat',['class'=>'col-lg-12 control-label text-lg-left pt-2']) !!}
+        {!! Form::select('candidate_id', $candidates,null,['placeholder' =>'Selecciona un Candidato','class' => 'form-control mb-3', 'id'=>'candidate_id','required']) !!}
     </div>
 </div>

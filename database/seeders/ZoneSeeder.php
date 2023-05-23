@@ -1,8 +1,10 @@
 <?php
 
+namespace Database\Seeders;
+
 use Illuminate\Database\Seeder;
 
-class SectorsTableSeeder extends Seeder
+class ZoneSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,6 +13,6 @@ class SectorsTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(\App\Sector::class,22)->create();
+        //
     }
 }

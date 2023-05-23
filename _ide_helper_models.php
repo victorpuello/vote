@@ -156,7 +156,7 @@ namespace App{
  * @mixin \Eloquent
  * @property-read mixed $count_voters
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Voter[] $voters
- * @property-read \Illuminate\Database\Eloquent\Collection|\App\Table[] $tables
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \App\Table> $tables
  * @property-read int|null $tables_count
  * @property-read int|null $voters_count
  */
@@ -230,7 +230,7 @@ namespace App{
  * @property string $phone
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
- * @property-read \Illuminate\Database\Eloquent\Collection|\App\Asignacion[] $asignacions
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \App\Asignacion> $asignacions
  * @property-read int|null $asignacions_count
  * @property-read mixed $full_name
  * @method static \Illuminate\Database\Eloquent\Builder|Testigo newModelQuery()

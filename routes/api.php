@@ -30,5 +30,6 @@ Route::prefix('v1')->name('api.')->group(function () {
         'votations' => 'API\VotationsController',
         'asignacions' => 'API\AsignacionController',
         'testigos' => 'API\TestigoController',
+        'zones' => 'API\ZoneController',
     ]);
 });
