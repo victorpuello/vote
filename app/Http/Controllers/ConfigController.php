@@ -10,20 +10,13 @@ use Styde\Html\Facades\Alert;
 
 class ConfigController extends Controller
 {
-    protected $welcome;
-
-    public function __construct()
-    {
-//        dd('entro esa monda');
-        $this->welcome = new Welcome();
-    }
 
     public function index(){
-        $sms = $this->welcome->getMessage();
+        $sms = Message::first();
         return view('admin.config.index',compact('sms'));
     }
     public function storeSms(UpdateMessageRequest $request){
-        $this->welcome->setMessage($request->all());
+        //$this->welcome->setMessage($request->all());
         Alert::message('Mensaje actualizado con exito','success');
         return redirect()->route('config');
     }
