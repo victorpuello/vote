@@ -3,13 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\Candidate;
+use App\Clases\SMS;
 use App\Http\Requests\CreateLeaderRequest;
 use App\Http\Requests\UpdateLeaderRequest;
 use App\Leader;
 use App\Sector;
 use App\Voter;
 use Styde\Html\Facades\Alert;
-
 class LeaderController extends Controller
 {
     /**
@@ -43,6 +43,9 @@ class LeaderController extends Controller
     public function store(CreateLeaderRequest $request)
     {
         $leader = Leader::create($request->all());
+        $msg = "Bienvenind@ ".$request->name." a nuestro proyecto politico SBDV 2024-2027";
+        $sms = new SMS();
+        $sms->sendSms($request->phone,$msg);
         Alert::message('Líder: '.$leader->full_name.', Guardado con exito','success');
         return redirect()->route('leaders.index');
     }

@@ -51,6 +51,8 @@ namespace App{
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Candidate whereUpdatedAt($value)
  * @mixin \Eloquent
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Candidate dataTableQuery($column = 'id', $orderBy = 'asc', $searchValue = '')
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \App\Leader> $leaders
+ * @property-read int|null $leaders_count
  * @property-read int|null $votation_count
  * @method static \Illuminate\Database\Eloquent\Builder|Candidate eloquentQuery($orderBy = 'id', $orderByDir = 'asc', $searchValue = '', $relationships = [])
  */
@@ -107,7 +109,10 @@ namespace App{
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Leader whereUpdatedAt($value)
  * @mixin \Eloquent
  * @property-read mixed $full_name
+ * @property int $candidate_id
+ * @property-read \App\Candidate $candidate
  * @property-read int|null $voters_count
+ * @method static \Illuminate\Database\Eloquent\Builder|Leader whereCandidateId($value)
  */
 	class Leader extends \Eloquent {}
 }
@@ -184,8 +189,11 @@ namespace App{
  * @property-read mixed $count_voters
  * @property-read mixed $short_name
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Voter[] $voters
+ * @property int $zone_id
  * @property-read int|null $leaders_count
  * @property-read int|null $voters_count
+ * @property-read \App\Zone $zone
+ * @method static \Illuminate\Database\Eloquent\Builder|Sector whereZoneId($value)
  */
 	class Sector extends \Eloquent {}
 }
@@ -346,5 +354,27 @@ namespace App{
  * @property-read \App\Sector $sector
  */
 	class Voter extends \Eloquent {}
+}
+
+namespace App{
+/**
+ * App\Zone
+ *
+ * @property int $id
+ * @property string $name
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \App\Sector> $sectors
+ * @property-read int|null $sectors_count
+ * @method static \Database\Factories\ZoneFactory factory(...$parameters)
+ * @method static \Illuminate\Database\Eloquent\Builder|Zone newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Zone newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Zone query()
+ * @method static \Illuminate\Database\Eloquent\Builder|Zone whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Zone whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Zone whereName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Zone whereUpdatedAt($value)
+ */
+	class Zone extends \Eloquent {}
 }
 

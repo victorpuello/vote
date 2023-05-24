@@ -7,76 +7,72 @@ namespace App\Clases;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Notification;
-use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Config;
-
+use Illuminate\Support\Facades\Http;
+/**
+ * [Description SMS]
+ */
 class SMS extends Notification implements ShouldQueue
 {
 
     use Queueable;
-    protected $url;
-    protected $url2;
-    protected $numero;
-    protected $sms;
-    protected $fecha;
-    protected $referencia;
+    protected $url_saldo;
+    protected $url_sms;
     protected $cliente;
     protected $key;
+    protected $token;
+    protected $headers;
+
 
     /**
-     * SMS constructor.
-     * @param int $numero
-     * @param string $sms
-     * @param string $referencia
+     * [Description for __construct]
+     *
+     * 
      */
-    public function __construct($numero, $sms, $referencia)
+    public function __construct()
     {
-        $this->url = 'https://api.hablame.co/sms/envio/';
-        $this->url2 = 'https://api.hablame.co/saldo/consulta/index.php';
-        $this->numero = $numero;
-        $this->sms = $sms;
-        $this->fecha = '';
-        $this->referencia = $referencia;
+        $this->url_saldo = Config::get('sms.endpoint_saldo');
+        $this->url_sms = Config::get('sms.endpoint_sms');
         $this->cliente = Config::get('sms.cliente');
         $this->key = Config::get('sms.key');
+        $this->token = Config::get('sms.token');
+        $this->headers = [
+            'account'=> $this->cliente,
+            'apiKey' => $this->key,
+            'token' => $this->token
+        ];
     }
 
-
     /**
-     * @param string $type
-     * @return array
+     * [Description for sendSms]
+     *
+     * @param mixed $numero
+     * @param mixed $sms
+     * 
+     * @return [type]
+     * 
      */
-    public function getOptions(string $type="saldo"){
-        $data = array(
-            'cliente' => $this->cliente,
-            'api' => $this->key,
+    public function  sendSms($numero, $sms){
+        $sms_p = Http::withHeaders($this->headers)->post($this->url_sms,[
+                "toNumber" => $numero,
+                "sms" => $sms,
+                "flash"=> "0",
+                "sc" => "890202",
+                "request_dlvr_rcpt"=> "0"
+            ]
         );
-        if ($type ==="sms"){
-            $data['numero'] = $this->numero;
-            $data['sms'] = $this->sms;
-            $data['fecha'] = '';
-            $data['referencia'] = $this->referencia;
-        }
-        return array(
-            'http' => array(
-                'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
-                'method'  => 'POST',
-                'content' => http_build_query($data)
-            ));
+        return $sms_p["status"] === "1x000" ? 'Se ha enviado el SMS exitosamente':'ha ocurrido un error!!';
     }
 
     /**
-     * @return string
+     * [Description for saldo]
+     *
+     * @return [type]
+     * 
      */
-    public function sendSms(){
-        $context  = stream_context_create($this->getOptions('sms'));
-        $result =  json_decode((file_get_contents($this->url,false,$context)),true);
-        return $result["resultado"] === 0 ? 'Se ha enviado el SMS exitosamente':'ha ocurrido un error!!';
-    }
-
     public function saldo(){
-        $context  = stream_context_create($this->getOptions());
-        $result = json_decode((file_get_contents($this->url2, false, $context)), true);
-        return $result["resultado"] === 0 ? number_format($result["saldo"],0,',','.'):$result["resultado_t"];
+        $response = Http::withHeaders($this->headers)->get($this->url_saldo);
+        $saldo = $response->object()->data->balance;
+        return $saldo;
     }
 }

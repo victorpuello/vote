@@ -56,5 +56,12 @@
         </div>
 
         <span class="mt-3 mb-3 line-thru text-center text-uppercase"></span>
+        @if($errors->any())
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{$error}}</li>
+            @endforeach
+        </ul>
+        @endif
     </form>
 @endsection
