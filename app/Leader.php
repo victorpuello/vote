@@ -55,7 +55,6 @@ class Leader extends Model
     {
         $this->attributes['lastname'] = strtoupper($lastname);
     }
-
     public function candidate(){
         return $this->belongsTo(Candidate::class);
     }

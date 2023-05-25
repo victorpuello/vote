@@ -42,6 +42,7 @@ class LeaderController extends Controller
      */
     public function store(CreateLeaderRequest $request)
     {
+       // dd($request->all());
         $leader = Leader::create($request->all());
         $msg = "Bienvenind@ ".$request->name." a nuestro proyecto politico SBDV 2024-2027";
         $sms = new SMS();
