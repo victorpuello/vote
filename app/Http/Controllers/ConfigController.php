@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Clases\Welcome;
 use App\Http\Requests\UpdateMessageRequest;
 use App\Message;
 use Illuminate\Http\Request;
@@ -15,9 +14,21 @@ class ConfigController extends Controller
         $sms = Message::first();
         return view('admin.config.index',compact('sms'));
     }
-    public function storeSms(UpdateMessageRequest $request){
-        //$this->welcome->setMessage($request->all());
-        Alert::message('Mensaje actualizado con exito','success');
+    public function storeSms(UpdateMessageRequest $request)
+    {
+        $sms = Message::first();
+
+        if ($sms) {
+            $sms->update($request->only('message', 'type'));
+        } else {
+            Message::create([
+                'name'    => 'SMS',
+                'message' => $request->input('message'),
+                'type'    => $request->input('type'),
+            ]);
+        }
+
+        Alert::message('Mensaje actualizado con exito', 'success');
         return redirect()->route('config');
     }
 
