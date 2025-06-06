@@ -34,7 +34,7 @@ class Votation extends Model
     ];
     public function candidate()
     {
-        return $this->BelongsTo(Candidate::class);
+        return $this->belongsTo(Candidate::class);
     }
     public function table()
     {
