@@ -36,7 +36,7 @@
                     <td class="center d-lg-none" >{{$leader->voters_count}}</td>
                     <td >{{$leader->sufragio_count}}</td>
                     <td >{{$leader->pending_sufragio_count}}</td>
-                    <td class="center d-lg-none" >{{porcentajeCumplimineto($leader->voters_count,$leader->sufragio_count)}}</td>
+                    <td class="center d-lg-none" >{{porcentajeCumplimiento($leader->voters_count,$leader->sufragio_count)}}</td>
                     <td >
                         <a href="{{route('tracking.leaders.notification',$leader)}}"  class="mb-1 mt-1 on-default edit-row btn btn-xs btn-success" ><i class="fas fa-sms"></i> Enviar Mensaje</a>
                         <a href="{{route('tracking.leaders.faltantes',$leader)}}"  class="mb-1 mt-1 on-default edit-row btn btn-xs btn-danger" ><i class="fas fa-meh-rolling-eyes"></i> Faltantes</a>
