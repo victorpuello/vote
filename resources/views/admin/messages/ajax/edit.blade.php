@@ -7,7 +7,7 @@
             {!! Form::model($sector,['route'=>['message.update',$sector],'method' => 'PUT','class' => 'form-horizontal form-bordered', 'id'=>'form-edit']) !!}
             <div class="modal-wrapper">
                 <div class="modal-text">
-                    @include('admin.messajes.partials.fields')
+                    @include('admin.messages.partials.fields')
                 </div>
             </div>
             <footer class="card-footer">
