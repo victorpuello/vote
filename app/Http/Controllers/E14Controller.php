@@ -39,7 +39,7 @@ class E14Controller extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  CreateE14Request  $request
      * @return \Illuminate\Http\Response
      */
     public function store(CreateE14Request $request)
@@ -75,7 +75,7 @@ class E14Controller extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  UpdateE14Request  $request
      * @param  \App\E14  $e14
      * @return \Illuminate\Http\Response
      */
