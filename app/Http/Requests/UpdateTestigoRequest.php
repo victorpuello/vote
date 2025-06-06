@@ -5,7 +5,7 @@ namespace App\Http\Requests;
 use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;
-use Styde\Html\Facades\Alert;
+
 
 class UpdateTestigoRequest extends FormRequest
 {
@@ -39,7 +39,6 @@ class UpdateTestigoRequest extends FormRequest
      * @throws \Illuminate\Validation\ValidationException
      */
     protected function failedValidation(Validator $validator){
-        Alert::message('El testigo no fue guardado, se presentaron los siguientes errores:', 'danger')->items($validator->errors());
         return parent::failedValidation($validator);
     }
     /**

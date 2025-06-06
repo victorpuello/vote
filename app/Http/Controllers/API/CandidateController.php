@@ -6,7 +6,6 @@ use App\Candidate;
 use App\Clases\LeaderOperations;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use JamesDordoy\LaravelVueDatatable\Http\Resources\DataTableCollectionResource;
 use PhpParser\Node\Expr\New_;
 
 class CandidateController extends Controller

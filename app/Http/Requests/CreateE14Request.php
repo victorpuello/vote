@@ -5,7 +5,7 @@ namespace App\Http\Requests;
 use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;
-use Styde\Html\Facades\Alert;
+
 
 class CreateE14Request extends FormRequest
 {
@@ -32,7 +32,6 @@ class CreateE14Request extends FormRequest
         ];
     }
     protected function failedValidation(Validator $validator){
-        Alert::message('El E14 no fue guardado, se presentaron los siguientes errores:', 'danger')->items($validator->errors());
         return parent::failedValidation($validator);
     }
     /**

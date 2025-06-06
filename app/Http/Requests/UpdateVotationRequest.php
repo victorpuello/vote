@@ -5,7 +5,7 @@ namespace App\Http\Requests;
 use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;
-use Styde\Html\Facades\Alert;
+
 
 class UpdateVotationRequest extends FormRequest
 {
@@ -30,7 +30,6 @@ class UpdateVotationRequest extends FormRequest
         ];
     }
     protected function failedValidation(Validator $validator){
-        Alert::message('La votación no fue guardada, se presentaron los siguientes errores:', 'danger')->items($validator->errors());
         return parent::failedValidation($validator);
     }
     /**
